@@ -1,7 +1,22 @@
 from flask import Flask, request, jsonify
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
+import sqlite3
+
 app = Flask(__name__)
+
+# Create database connection
+conn = sqlite3.connect('chatbot.db')
+cursor = conn.cursor()
+
+# Create table if it doesn't exist
+cursor.execute("""CREATE TABLE IF NOT EXISTS questions (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    question TEXT,
+                    answer TEXT,
+                    predicted_class INTEGER
+                )""")
+conn.commit()
 
 # Load the TinyBERT model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained("huawei-noah/TinyBERT_General_4L_312D")
@@ -27,3 +42,4 @@ def generate_response(user_input):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
