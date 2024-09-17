@@ -1,5 +1,7 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import torch
+from Internshipinfo import Internshipinfo
 
 import sqlite3
 
@@ -23,22 +25,25 @@ tokenizer = AutoTokenizer.from_pretrained("huawei-noah/TinyBERT_General_4L_312D"
 model = AutoModelForSequenceClassification.from_pretrained("huawei-noah/TinyBERT_General_4L_312D", num_labels=2)
 
 @app.route('/')
-def index():
-    return 'Welcome to the chatbot!'
+def home():
+    return render_template('chat.html')
 
-@app.route('/chat', methods=['POST'])
-def chat():
+@app.route('/api/chat', methods=['POST'])
+def api_chat():
     data = request.get_json()
     user_input = data['user_input']
-    response = generate_response(user_input)
+    if user_input.lower() in Internshipinfo:
+        response = Internshipinfo[user_input.lower()]
+    else:
+        response = generate_response(user_input)
     return jsonify({'response': response})
 
 def generate_response(user_input):
-    # Implement the logic to generate a response using the TinyBERT model
     inputs = tokenizer(user_input, return_tensors="pt")
-    outputs = model(**inputs)
-    # Process the outputs and generate a response
-    return "This is a sample response from the chatbot."
+    with torch.no_grad():
+        outputs = model(**inputs)
+    # This is a placeholder. You'll need to implement proper response generation
+    return f"Chatbot: I received your message: {user_input}"
 
 if __name__ == '__main__':
     app.run(debug=True)
