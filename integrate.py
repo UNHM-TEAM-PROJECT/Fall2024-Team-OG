@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from your_tinybert_file import TinyBERTClassifier
+from tiny import TinyBERTClassifier
 
 app = Flask(__name__)
 classifier = TinyBERTClassifier()
