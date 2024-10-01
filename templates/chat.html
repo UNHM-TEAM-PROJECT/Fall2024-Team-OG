@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot Interface</title>
+    <title>UNHM Computing Internship Chatbot</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
 </head>
 <body>
@@ -11,10 +11,10 @@
         <img src="{{ url_for('static', filename='images/unh_logo.png') }}" alt="UNH Logo" class="college-logo">
         <h1 class="main-title">UNHM Computing Internship Chatbot</h1>
         <div class="chat-container">
-            <div class="chat-messages" id="chat-messages"></div>
+            <div id="chat-messages" class="chat-messages"></div>
             <div class="chat-input-container">
-                <textarea id="user-input" class="chat-input" placeholder="Type your message here..." rows="5"></textarea>
-                <button id="send-button" class="chat-send">Send</button>
+                <textarea id="user-input" placeholder="Type your message here..." rows="5"></textarea>
+                <button id="send-button">Send</button>
             </div>
         </div>
     </div>

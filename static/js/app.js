@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function displayMessage(sender, message) {
         const messageElement = document.createElement('div');
         messageElement.classList.add('message', `message--${sender}`);
+        messageElement.setAttribute('data-sender', sender === 'user' ? 'you :' : 'chatbot :');
         messageElement.textContent = message;
         chatMessages.appendChild(messageElement);
         // Scroll to latest message

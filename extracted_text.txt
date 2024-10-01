@@ -1,0 +1,409 @@
+ 
+ 
+ 
+ 
+1 
+ 
+COMP690 M2/M3 Internship Experience 
+ Course Syllabus 
+ 
+ 
+BASIC INFORMATION 
+ 
+Course Information 
+Name:  
+ 
+COMP690 Internship Experience 
+Credits:  
+ 
+4 
+Term:   
+ 
+Fall 2024 
+Location: 
+ 
+Rm P142 
+Time:   
+ 
+M2 Section: Wednesday 9:10am-12pm 
+ 
+ 
+ 
+M2 Section: Wednesday 1:10-4pm 
+ 
+Instructor Information 
+Name:  
+Karen Jin, Associate Professor, Department of Applied Engineering and Sciences 
+Office:  
+Rm139, Pandora Mill building 
+Zoom:  
+https://unh.zoom.us/j/4858446046 
+Email:  
+karen.jin@unh.edu 
+Office Hours:  Monday 1-4pm and Friday 9-noon. Available in person or over Zoom. Email to 
+make appointments. 
+ 
+ 
+COURSE DESCRIPTION 
+ 
+The internship course provides experiential learning experience through placement in team 
+projects. This hands-on experience allows students to gain practical skills and insights into the 
+field of computing. By working on a collaborative project with external stakeholders, they will 
+contribute to the development of real-world information technology products, processes, or 
+services, and understand the challenges involved in implementing technology solutions in a 
+professional setting. 
+ 
+ 
+STUDENT LEARNING OUTCOME 
+• Analyze complex computing problems and identify solutions by applying principles of 
+computing.  
+• Design, implement, and evaluate computing solutions that meet IT computing requirements.  
+• Communicate effectively in a variety of professional contexts.  
+• Function effectively as a member or leader of a team engaged in IT activities.  
+• Identify and analyze user needs in the process of developing and operating computing 
+systems.  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+2 
+ 
+ 
+TENTATIVE COURSE SCHEDULE 
+ 
+Weeks 
+Activities 
+Week 1   
+8/28 
+ 
+ 
+• 
+Class Introduction / Development Team (DT) Setup 
+• 
+Intro to Project Management  
+• 
+Intro to Scrum workflow 
+• 
+Project Goal 
+Week 2 
+9/4  
+ 
+• 
+Project Kickoff  
+• 
+Environment Setup: Jira 
+- 
+Create Project backlog 
+- 
+Create user stories, tasks and bugs  
+- 
+Integration w/ Source code control, team communication  
+Week 3 
+9/11  
+ 
+• 
+Sprint Planning meeting  
+• 
+Create Sprint Backlog (from Product Backlog) and Sprint Goal 
+• 
+Each DT builds development plan and tasks 
+• 
+Set up sprint and scrum board in Jira 
+Week 4 
+9/18 
+ 
+• 
+1st Sprint development starts. 
+• 
+Scrum meetings start. ß 
+ 
+Week 5 
+9/25 
+ 
+• 
+Scrum meetings (Monday, Wednesday, Friday) 
+ 
+Week 6 
+10/2 
+ 
+• 
+Scrum meetings (Monday only) 
+• 
+End of 1st Sprint 
+• 
+Sprint Review + Sprint Retrospective 
+ 
+Week 7 
+10/9 
+ 
+• 
+2nd Sprint Planning meeting 
+• 
+2nd Sprint development starts. 
+• 
+Scrum meeting on Friday 
+Week 8 
+10/16 
+• 
+Scrum meetings (Wednesday, Friday) 
+Week 9 
+10/23 
+ 
+• 
+Scrum meetings (Monday, Wednesday, Friday) 
+ 
+Week 10 
+10/30 
+ 
+• 
+Scrum meetings (Monday, Wednesday, Friday) 
+ 
+Week 11 
+11/6 
+ 
+• 
+Scrum meetings (Monday only) 
+• 
+End of 2nd Sprint 
+• 
+Sprint Review + Sprint Retrospective 
+ 
+ 
+ 
+ 
+ 
+3 
+ 
+Weeks 
+Activities 
+Week 12 
+11/13 
+ 
+• 
+3rd Sprint Planning meeting 
+• 
+3rd Sprint development starts. 
+• 
+Scrum meetings (Friday only) 
+Week 13 
+11/20 
+ 
+• 
+Scrum meetings (Monday, Wednesday, Friday) 
+• 
+Weekly status report 
+Week 14 
+11/27 
+No class 
+ 
+• 
+Thanksgiving Break 
+• 
+Scrum meetings (Monday only) 
+Week 15 
+12/4  
+ 
+• 
+Scrum meetings (Monday only) 
+• 
+End of 3rd Sprint 
+• 
+Retrospective / lessons learned  
+• 
+Final Report due on 12/9 
+ 
+ 
+ 
+GRADING  
+ 
+The internship project will follow the general structure of Scrum framework, which includes 
+specific roles, events, artifacts, and rules. The product owner, project manager, and development 
+team will be established, and project events such as Sprint Planning, Daily Scrum meeting, Sprint 
+Release, and will be conducted. Your final grade consists of the following three components.  
+ 
+10% Class Attendance of all required meetings  
+ 
+60% Sprint Grade is calculated as: Teamwork Grade * Sprint Grade 
+• Teamwork Grade is based on peer evaluation for each of the three sprints. Detailed rubrics 
+TBA.   
+• Sprint Grades: You will receive a team grade for each of the three sprints, based on the 
+technical aspect of the product and team project management. Detailed rubrics TBA.   
+ 
+10% Homework: additional homework in project management and development tools.  
+ 
+20% Final Project Report: See Appendix A for the report format.  
+ 
+Credit hour workload estimate: a minimum of 45 hours of student academic work per 
+credit per term.  
+ 
+ 
+COURSE POLICIES REGARDING STUDENT BEHAVIOR 
+ 
+Attendance 
+ 
+ 
+ 
+ 
+4 
+ 
+Students are responsible for attending scheduled meetings and expected to abide by the University 
+Policy on Attendance (as stated in the UNH Student Rights, Rules, and Responsibilities).  
+ 
+Students who cannot attend a scheduled meeting have the responsibility to email the instructor 
+about the circumstances and request to be excused for the meeting BEFORE the class meeting. 
+You will also need to arrange a meeting with the instructor individually to update your internship 
+progress.  
+ 
+Late Submissions  
+Policy for late submissions is very strict and applies only in exceptional cases of student illness, 
+accident, or emergencies that are properly documented. A late submission may be granted only if 
+the student: 
+• 
+Emails prior to the deadline and  
+• 
+Explains and provides evidence for the circumstances that have prevented the student from 
+meeting class requirement.  
+Failing to comply with these rules may result in no credit for the assignment.  
+ 
+ 
+Appendix A: Final Report Requirements:  
+ 
+The report must include the following items:  
+ 
+1. A Title Page. The first page should display the student’s full name, internship start and finish 
+dates, the title of the internship project. 
+ 
+2. An Executive Summary of the project. Provide a concise overview of the project, including its 
+objectives, duration, and key outcomes. 
+- Introduction: Introduce the project and its background, including the problem or 
+opportunity that led to its initiation. Describe the rationale for using the Scrum 
+framework and highlight the project's significance. 
+- Project Objectives: Clearly state the project's objectives, both in terms of deliverables 
+and the intended business or customer impact. 
+- Scrum framework: Explain how the Scrum framework was adopted and implemented 
+throughout the project lifecycle. Discuss the roles and responsibilities of each team 
+member and highlight any adjustments or adaptations made to fit the project's context. 
+ 
+Use full sentences, instead of bullet points, in your writing. You need to have minimal 2 full 
+pages (not including spacing, figures and tables) for this section.  
+ 
+3. Self-assessment of the Project Experience. In this section you should answer the following 
+questions: 
+- What did you learn from your experience?  
+- What is the relationship of the work to your major studies? 
+- What were the benefits to you? 
+ 
+ 
+ 
+ 
+5 
+ 
+- What is the comparison between theory (things you have learned in the classroom) and 
+practice (things you did or observed at the internship)? 
+- How do you think the project activities that you carried out are correlated with your 
+classroom knowledge? 
+- How do you think the project will influence your future career plans? 
+ 
+      Include also your reflection on the internship experiences:  
+- Describe what was learned and how it will be applied to your professional career goals; 
+- Identify additional skills that will need to be developed to ensure career readiness. This 
+might include learning a new technology, developing a broader network, additional 
+coursework, etc.   
+- What advice would you have for a fellow student and/or faculty member with regard to 
+your experience? 
+ 
+Use full sentences, instead of bullet points, in your writing. You need to have minimal 3 
+full pages (not including spacing, figures and tables) for this section.  
+ 
+1. 
+Conclusions. This section should include a summary of key conclusions derived from the 
+project experience. (1 full page) 
+ 
+Formatting Requirement:  
+ 
+The internship report should be  
+- in Single-spaced lines. 
+- between 6-8 pages (not including the title page, figures, and tables); 
+- Size 12 in Times New Roman font. 
+- No additional white space between paragraphs and sections.  
+- All tables and figures must be captioned.  
+- All pages are numbered.  
+ 
+The report should be saved in PDF format for submission.   
+ 
+Grading criteria: 60% content; 20% grammar and mechanics; 20% format. 
+Fail to fulfill the page requirements will result in up to 30% deduction of the total report grade.  
+You need to earn minimal 75% in your final report grade to pass the course.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6 
+ 
+ 
+------------------------------------------------------------------------------------------------------------------ 
+UNH Academic Integrity policy:  Academic Integrity Policy link. 
+Confidentiality and Mandatory Reporting of Sexual Violence or Harassment – Manchester 
+The University of New Hampshire and its faculty are committed to assuring a safe and productive educational 
+environment for all students and for the university as a whole. To this end, the university requires faculty members to 
+report to the university’s Title IX Coordinator (Bo Zaryckyj, Bo.Zaryckyj@unh.edu, 603-862-2930/1527 TTY) or to 
+the UNH Manchester/CPS Title IX Deputy Intake Coordinator (Lisa Enright, lisa.enright@unh.edu  603-641-4336, 
+Room 439) any incidents of sexual violence and harassment shared by students. 
+If you wish to speak to a confidential support service provider who does not have this reporting responsibility because 
+their discussions with clients are subject to legal privilege, you can contact the SHARPP Center for Interpersonal 
+Violence Awareness, Prevention, and Advocacy at (603) 862-7233/TTY (800) 735-2964. For more information about 
+what happens when you report, how the university treats your information once a report is made to the Title IX 
+Coordinator, your rights and reporting options at UNH (including anonymous reporting options) please visit student 
+reporting options .  The uSafeUS app is also available for students to keep reporting options and resources easily 
+accessible on their phones. 
+Help us improve our campus and community climate. If you have observed or experienced an incident of bias, 
+discrimination or harassment, please report the incident by contacting the Civil Rights & Equity Office 
+at UNH.civilrights@unh.edu or TEL # (603) 862-2930 voice/ (603) 862-1527 TTY / 7-1-1 Relay NH,  or visit the 
+CREO website. Anonymous reports may be submitted. 
+Confidential Support Resources for UNH Manchester: 
+• 
+SHARPP Extended Services Coordinator for UNH Manchester- room 417. Available in person Mondays 9 am to 
+4-pm and by Zoom appointment year-round M-F. 
+• 
+YWCA, NH – 603-668-2299(24hour), 72 Concord St. Manchester, NH 
+• 
+The Mental Health Center of Greater Manchester: On campus mental health counselors are available by 
+appointment during the academic year. Located in room 426. 
+• 
+24 Hour NH Sexual Violence Hotline: 1-800-277-5570 
+• 
+24 Hour NH Domestic Violence Hotline: 1-866-644-3574 
+ 
+Library Resources – Manchester 
+The UNH Manchester librarians are available to assist you with the research process. Visit the library’s website 
+at https://cps.unh.edu/library to learn about library services and to search for reliable academic sources. You can 
+contact the library at 603-641-4173 or at unhm.library@unh.edu. 
+The links below guide you to useful online library resources: 
+• 
+Make a Research Appointment with a librarian: https://libraryguides.unh.edu/remoteaccess/researchhelp 
+• 
+Use the Library Search Box to find information: https://libraryguides.unh.edu/librarysearchbox_unhmanchester 
+• 
+Reserve a Study Room: https://cps.unh.edu/library/support-services 
+• 
+Discover resources for Citing Sources: https://libraryguides.unh.edu/unhmcitingsources 
+• 
+Learn strategies for Evaluating 
+Sources: https://libraryguides.unh.edu/ENGL401UNHManchester/evaluatingsources.  
+  
+ 
+ 
+ 
+ 
+7 
+ 
+ 
