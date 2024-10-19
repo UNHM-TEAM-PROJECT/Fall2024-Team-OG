@@ -5,5 +5,4 @@ Internshipinfo = {
     "I have done two credits how many credits required still for the internship course? " :"1",
     "Can I meet professor on weekends? "  :"No.",
     "On What days do we have sprint meetings?" :" Mon,Wed, Fri"
-
 }
