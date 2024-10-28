@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNHM Internship Chatbot</title>
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #e7f3ff;
+            --text-color: #212529;
+            --border-color: #dee2e6;
+            --hover-color: #004c99;
+            --background-color: #f8f9fa;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 16px;
+            overflow: hidden;
+            height: calc(100vh - 40px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            border-radius: 8px 8px 0 0;
+            margin: -16px -16px 16px -16px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+            font-weight: 500;
+            padding-top: 5px;
+            white-space: nowrap;
+        }
+
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 15px 0;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        .message-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin: 0 15px 12px 15px;
+            gap: 8px;
+            width: calc(100% - 30px);
+        }
+
+        .bot-message-wrapper {
+            justify-content: flex-start;
+        }
+
+        .message {
+            margin-bottom: 12px;
+            padding: 12px 16px;
+            border-radius: 12px;
+            max-width: 80%;
+            position: relative;
+            line-height: 1.5;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            animation: fadeIn 0.3s ease-in-out;}
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .user-message {
+            background-color: var(--secondary-color);
+            margin-left: auto;
+            color: var(--primary-color);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .bot-message {
+            background-color: var(--background-color);
+            margin-right: auto;
+            color: var(--text-color);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .edit-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #6c757d;
+            padding: 4px;
+            font-size: 16px;
+            opacity: 0.7;
+            transition: color 0.2s ease, opacity 0.2s ease;
+            display: flex;
+            align-items: center;
+            min-width: 24px;
+            justify-content: center;
+        }
+
+        .edit-button:hover {
+            color: var(--primary-color);
+            opacity: 1;
+        }
+
+        .input-container {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            background-color: white;
+            border: 2px solid var(--border-color);
+            border-radius: 24px;
+            padding: 4px 12px;
+            margin-top: 10px;
+            transition: border-color 0.2s ease;
+        }
+
+        .input-container:focus-within {
+            border-color: var(--primary-color);
+        }
+
+        #user-input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            font-size: 15px;
+            outline: none;
+            background: transparent;
+            cursor: text;
+            caret-color: var(--primary-color);
+        }
+
+        .send-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            min-width: 32px;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .send-button:hover {
+            color: var(--hover-color);
+            transform: scale(1.1);
+        }
+
+        .send-button:disabled {
+            color: var(--border-color);
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .arrow-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .chat-container::-webkit-scrollbar {
+            width: 6px;
+            height: 0;
+        }
+
+        .chat-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .chat-container::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 3px;
+        }
+
+        .chat-container::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 12px 16px;
+            background-color: var(--background-color);
+            border-radius: 12px;
+            margin: 0 15px 12px 15px;
+            width: fit-content;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: typingAnimation 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(1) { animation-delay: 0s; }
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typingAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                height: calc(100vh - 20px);
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+
+            .message {
+                max-width: 85%;
+            }
+
+            .message-wrapper {
+                margin: 0 10px 12px 10px;
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="static/CenterStackedWhiteWeb_RGB.png" alt="UNH Logo" class="logo">
+            <h1>UNHM Internship Chatbot</h1>
+        </div>
+        <div class="chat-container" id="chat-messages">
+            {% for message in messages %}
+            <div class="message-wrapper {% if message.role == 'bot' %}bot-message-wrapper{% endif %}">
+                <div class="message {% if message.role == 'user' %}user-message{% else %}bot-message{% endif %}">
+                    {{ message.content }}
+                </div>
+                {% if message.role == 'user' %}
+                <button class="edit-button" onclick="editMessage(this)">✎</button>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off">
+            <button class="send-button" id="send-button" onclick="sendMessage()" disabled>
+                <svg class="arrow-icon" viewBox="0 0 24 24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        let isProcessing = false;
+
+        function createTypingIndicator() {
+            const indicator = document.createElement('div');
+            indicator.className = 'typing-indicator';
+            indicator.innerHTML = `
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            `;
+            return indicator;
+        }
+
+        userInput.addEventListener('input', function() {
+            sendButton.disabled = !this.value.trim();
+        });
+
+        userInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter' && !event.shiftKey && !isProcessing && this.value.trim()) {
+                event.preventDefault();
+                sendMessage();
+            }
+        });
+
+        function editMessage(button) {
+            const messageWrapper = button.parentElement;
+            const messageDiv = messageWrapper.querySelector('.message');
+            const messageText = messageDiv.textContent.trim();
+            userInput.value = messageText;
+            userInput.focus();
+            messageWrapper.remove();
+            sendButton.disabled = false;
+        }
+
+        function addMessage(content, isUser) {
+            const messageWrapper = document.createElement('div');
+            messageWrapper.className = `message-wrapper ${isUser ? '' : 'bot-message-wrapper'}`;
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+            messageDiv.textContent = content;
+            
+            messageWrapper.appendChild(messageDiv);
+            
+            if (isUser) {
+                const editButton = document.createElement('button');
+                editButton.className = 'edit-button';
+                editButton.innerHTML = '✎';
+                editButton.onclick = function() { editMessage(this); };
+                messageWrapper.appendChild(editButton);
+            }
+            
+            chatMessages.appendChild(messageWrapper);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        async function sendMessage() {
+            if (isProcessing) return;
+            
+            const message = userInput.value.trim();
+            if (!message) return;
+
+            isProcessing = true;
+            sendButton.disabled = true;
+            addMessage(message, true);
+            userInput.value = '';
+
+            const typingIndicator = createTypingIndicator();
+            chatMessages.appendChild(typingIndicator);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: message })
+                });
+
+                const data = await response.json();
+                typingIndicator.remove();
+
+                if (data.error) {
+                    addMessage('Error: ' + data.error, false);
+                } else {
+                    addMessage(data.response, false);
+                }
+            } catch (error) {
+                typingIndicator.remove();
+                addMessage('Sorry, there was an error processing your request.', false);
+                console.error('Error:', error);
+            } finally {
+                isProcessing = false;
+                sendButton.disabled = false;
+            }
+            
+            userInput.focus();
+        }
+
+        // Initialize
+        userInput.focus();
+    </script>
+</body>
+</html>
