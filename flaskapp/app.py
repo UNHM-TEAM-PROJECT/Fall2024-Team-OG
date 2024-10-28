@@ -19,7 +19,10 @@ import hashlib
 load_dotenv()
 
 # Set up OpenAI API key
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+# Set up OpenAI API key
+API_KEY = "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"
+os.environ["OPENAI_API_KEY"] = API_KEY
+
 
 app = Flask(__name__)
 
