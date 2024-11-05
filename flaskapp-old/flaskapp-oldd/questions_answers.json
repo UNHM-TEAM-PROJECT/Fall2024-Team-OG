@@ -1,0 +1,406 @@
+[
+    {
+        "test_case": "scrum_meeting_days",
+        "question": "What days are the scrum meetings scheduled?",
+        "expected_answer": "Scrum meetings are scheduled on Mondays and Wednesdays."
+    },
+    {
+        "test_case": "final_report_due_date",
+        "question": "What is the due date for the final report?",
+        "expected_answer": "The final report is due on 12/9 according to the provided document."
+    },
+    {
+        "test_case": "holiday_meetings",
+        "question": "Are there meetings during the holiday?",
+        "expected_answer": "I'm sorry, but I couldn't find this information in the provided document."
+    },
+    {
+        "test_case": "grading_structure",
+        "question": "What is the grading structure?",
+        "expected_answer": "The grading structure consists of Class Attendance, Sprint Grade, and Final Project Report."
+    },
+    {
+        "test_case": "attendance_contribution",
+        "question": "How much does attendance contribute to the final grade?",
+        "expected_answer": "Class Attendance contributes 10% to the final grade."
+    },
+    {
+        "test_case": "sprint_grade_calculation",
+        "question": "How is the Sprint Grade calculated?",
+        "expected_answer": "The Sprint Grade is calculated as: Teamwork Grade * Sprint Grade."
+    },
+    {
+        "test_case": "final_project_weightage",
+        "question": "What is the weightage of the final project report?",
+        "expected_answer": "The Final Project Report contributes 20% to the final grade."
+    },
+    {
+        "test_case": "internship_certificate",
+        "question": "Will I receive a certificate after completing the internship?",
+        "expected_answer": "Yes, you will receive a certificate after successfully completing the internship."
+    },
+    {
+        "test_case": "teamwork_evaluation",
+        "question": "How is the teamwork evaluated?",
+        "expected_answer": "Teamwork is evaluated based on peer evaluation for each of the three sprints."
+    },
+    {
+        "test_case": "assignment_deadlines",
+        "question": "What are the submission deadlines for assignments?",
+        "expected_answer": "The submission deadlines will be communicated by the instructor."
+    },
+    {
+        "test_case": "makeup_policy",
+        "question": "Is there a makeup policy for missed assignments?",
+        "expected_answer": "There is no makeup policy for missed assignments unless you have prior approval."
+    },
+    {
+        "test_case": "project_framework",
+        "question": "What framework does the internship project follow?",
+        "expected_answer": "The internship project follows the Scrum framework."
+    },
+    {
+        "test_case": "minimum_workload",
+        "question": "What is the minimum credit hour workload?",
+        "expected_answer": "The minimum credit hour workload is 45 hours per credit per term."
+    },
+    {
+        "test_case": "quizzes_grading",
+        "question": "How are quizzes graded?",
+        "expected_answer": "Quizzes contribute to your final grade based on your performance and are averaged."
+    },
+    {
+        "test_case": "extra_credit_opportunities",
+        "question": "Are there extra credit opportunities?",
+        "expected_answer": "Extra credit opportunities will be available at the instructor's discretion."
+    },
+    {
+        "test_case": "late_submission_policy",
+        "question": "What is the policy for late submissions?",
+        "expected_answer": "Late submissions are penalized by a 10% grade reduction per day."
+    },
+    {
+        "test_case": "plagiarism_penalties",
+        "question": "What are the penalties for plagiarism?",
+        "expected_answer": "Plagiarism results in a failing grade for the assignment and may result in further disciplinary actions."
+    },
+    {
+        "test_case": "course_credits",
+        "input": "What are the course credits?",
+        "expected_keywords": ["4", "credits", "credit hours", "course credit"]
+    },
+    {
+        "test_case": "class_location",
+        "input": "Where are classes held?",
+        "expected_keywords": ["Rm P142", "location", "room", "building", "P142", "classroom"]
+    },
+    {
+        "test_case": "instructor_office_hours",
+        "input": "What are the instructor's office hours?",
+                "expected_keywords": ["office hours", "Monday 1-4pm", "Friday 9-noon", "in person", "Zoom", "available", "appointments", "Monday", "Friday", "1-4", "9-noon"]
+    },
+    {
+        "test_case": "course_description",
+        "input": "What is the course description?",
+        "expected_keywords": ["experiential learning", "team projects", "real-world", "information technology", "products", "processes", "services", "hands-on", "collaborative", "external stakeholders", "professional setting", "practical skills", "insights"]
+    },
+    {
+        "test_case": "student_learning_outcomes",
+        "input": "List the student learning outcomes.",
+        "expected_keywords": ["analyze", "design", "implement", "evaluate", "computing solutions", "IT computing requirements", "communicate", "effectively", "variety", "professional contexts", "function", "team", "IT activities", "leader", "identify", "analyze user needs", "developing", "operating", "computing systems", "principles of computing"]
+    },
+    {
+        "test_case": "final_report_due",
+        "input": "When is the final project report due?",
+        "expected_keywords": ["12/9", "final report", "due date", "December 9th", "december", "submission", "deadline"]
+    },
+    {
+        "test_case": "attendance_percentage",
+        "input": "What is the percentage for attendance?",
+        "expected_keywords": ["10%", "attendance", "grade", "required meetings", "10 percent", "ten percent"]
+    },
+    {
+        "test_case": "sprint_grade_calculation_details",
+        "input": "How is the sprint grade calculated?",
+        "expected_keywords": ["teamwork grade", "sprint grade", "peer evaluation", "technical", "management", "rubrics", "TBA", "calculated", "weighted average", "combined", "assessment", "scoring"]
+    },
+    {
+        "test_case": "late_submission_policy_details",
+        "input": "What's the policy on late submissions?",
+        "expected_keywords": ["late submissions", "strict", "illness", "accident", "emergencies", "email", "evidence", "no credit", "penalty", "deadline", "excuse", "prior notification"]
+    },
+    {
+        "test_case": "final_report_requirements",
+        "input": "What are the requirements for the final report?",
+        "expected_keywords": ["title page", "executive summary", "self-assessment", "conclusions", "2 full pages", "3 full pages", "Scrum framework", "minimum", "pages", "report", "format", "full sentences", "bullet points"]
+    },
+    {
+        "test_case": "minimum_internship_hours",
+        "input": "What is the minimum number of hours for the internship?",
+        "expected_keywords": ["45 hours", "minimum", "credit hour", "workload estimate", "student academic work", "per credit", "per term", "minimum hours"]
+    },
+    {
+        "test_case": "instructor_email",
+        "input": "What is the instructor's email address?",
+        "expected_keywords": ["karen.jin@unh.edu", "email", "contact", "instructor"]
+    },
+    {
+        "test_case": "zoom_link",
+        "input": "What is the Zoom link for the course?",
+        "expected_keywords": ["https://unh.zoom.us/j/4858446046", "zoom", "link", "meeting", "online", "virtual"]
+    },
+    {
+        "test_case": "grading_breakdown",
+        "input": "What is the grading breakdown?",
+        "expected_keywords": ["10%", "60%", "20%", "attendance", "sprint grade", "final project", "percentage", "weight", "weightage", "breakdown", "grading"]
+    },
+    {
+        "test_case": "activities_week_3",
+        "input": "What are the activities scheduled for week 3?",
+        "expected_keywords": ["sprint planning", "create sprint backlog", "user stories", "integration", "tasks", "bugs", "source code control", "team communication", "jira", "week 3", "activities"]
+    },
+    {
+        "test_case": "course_sections",
+        "input": "What are the different sections of the course?",
+        "expected_keywords": ["M1 Section", "M2 Section", "Wednesday 9:10am-12pm",         "1:10-4pm", "section", "times", "schedule"]
+    },
+    {
+        "test_case": "course_building_name",
+        "input": "What is the name of the building where the course is held?",
+        "expected_keywords": ["Pandora Mill building", "Rm 139", "building", "location", "pandora mill"]
+    },
+    {
+        "test_case": "attendance_policy",
+        "input": "What is the university's policy on attendance?",
+        "expected_keywords": ["university policy", "attendance", "student rights", "rules", "responsibilities", "required", "excused", "email", "instructor"]
+    },
+    {
+        "test_case": "technology_in_description",
+        "input": "What technology is mentioned in the course description?",
+        "expected_keywords": ["information technology", "technology solutions", "products", "processes", "services", "technology"]
+    },
+    {
+        "test_case": "instructor_name_and_title",
+        "input": "What is the instructor's name and title?",
+        "expected_keywords": ["Karen Jin", "Associate Professor", "professor", "instructor", "name", "title"]
+    },
+    {
+        "test_case": "required_meetings",
+        "input": "Are there any required meetings?",
+        "expected_keywords": ["required meetings", "scrum meetings", "sprint review", "sprint retrospective", "meetings", "attendance", "required"]
+    },
+    {
+        "test_case": "majors_requiring_internships",
+        "input": "Which majors require internships?",
+        "expected_keywords": ["Computer Information Systems", "CIS", "Computer Science", "CS", "Information Technology", "Cybersecurity Engineering", "internship", "required", "majors"]
+    },
+    {
+        "test_case": "faculty_internship_coordinator",
+        "input": "Who is the faculty internship coordinator?",
+        "expected_keywords": ["Karen Jin", "Rm139", "Pandora Mill building", "coordinator", "faculty", "internship"]
+    },
+    {
+        "test_case": "caps_office_website",
+        "input": "What is the CaPS office website?",
+        "expected_keywords": ["manchester.unh.edu/careers", "career-professional-success", "website", "caps", "career services"]
+    },
+    {
+        "test_case": "oiss_email_address",
+        "input": "What is the OISS email address?",
+        "expected_keywords": ["oiss@unh.edu", "email", "oiss", "international students"]
+    },
+    {
+        "test_case": "comp690_description",
+        "input": "Describe COMP690.",
+        "expected_keywords": ["applied research", "team project", "currently working", "last semester", "comp690", "course", "description"]
+    },
+    {
+        "test_case": "comp890_purpose",
+        "input": "What is the purpose of COMP890?",
+        "expected_keywords": ["internship and career planning", "first semester", "internship search", "comp890", "career", "planning"]
+    },
+    {
+        "test_case": "comp891_credits",
+        "input": "What are the credits for COMP891?",
+        "expected_keywords": ["1-3 credits", "variable credit", "external internship", "CPT", "comp891", "credits"]
+    },
+    {
+        "test_case": "who_should_take_comp892",
+        "input": "Who should take COMP892?",
+        "expected_keywords": ["applied research", "currently working", "tech fields", "full time", "part time", "comp892", "students"]
+    },
+    {
+        "test_case": "comp893_requirements",
+        "input": "What are the requirements for COMP893?",
+        "expected_keywords": ["team project", "last semester", "internship requirements", "comp893", "requirements"]
+    },
+    {
+        "test_case": "registering_for_internship_course",
+        "input": "How do I register for an internship course?",
+        "expected_keywords": ["instructor's permission", "email", "Karen Jin", "register", "internship course", "registration"]
+    },
+    {
+        "test_case": "finding_internship_opportunities",
+        "input": "Where can I find internship opportunities?",
+        "expected_keywords": ["Handshake", "LinkedIn", "Indeed", "Hired", "internship fair", "opportunities", "jobs", "internships"]
+    },
+    {
+        "test_case": "career_services_available",
+                "input": "What career services are available?",
+        "expected_keywords": ["resume writing", "interview coaching", "career advice", "career services", "resume", "interview"]
+    },
+    {
+        "test_case": "using_past_internship",
+        "input": "Can I use a past internship to fulfill requirements?",
+        "expected_keywords": ["no", "registered", "required hours", "past internship", "previous internship"]
+    },
+    {
+        "test_case": "register_internship_on_handshake",
+        "input": "How do I register my internship experience on Handshake?",
+        "expected_keywords": ["Handshake", "Request an Experience", "site supervisor", "learning objectives", "handshake", "register", "experience"]
+    },
+    {
+        "test_case": "requirements_for_internship_while_working",
+        "input": "What are the requirements for completing an internship course while working?",
+        "expected_keywords": ["class meetings", "weekly logs", "final report", "presentations", "requirements", "working", "internship"]
+    },
+    {
+        "test_case": "internship_hours_requirements",
+        "input": "How many hours of internship work are required for undergraduate students?",
+        "expected_keywords": ["150 hours", "4 credits", "undergraduate", "hours", "credits"]
+    },
+    {
+        "test_case": "internship_offer_timeline",
+        "input": "What should I do if I get an internship offer after the semester starts?",
+        "expected_keywords": ["contact Karen Jin", "late add", "arrange with employer", "offer", "semester", "started"]
+    },
+    {
+        "test_case": "cpt_authorization_requirements",
+        "input": "What do I need for CPT authorization?",
+        "expected_keywords": ["job description", "offer letter", "course registration", "cpt", "authorization", "f1 student"]
+    },
+    {
+        "test_case": "cpt_authorization_notes",
+        "input": "What are important notes about CPT authorization and internship dates?",
+        "expected_keywords": ["specific dates", "semester dates", "4-week period", "cpt", "dates", "employment"]
+    },
+    {
+        "test_case": "cpt_request_steps",
+        "input": "What are the steps to request CPT authorization?",
+        "expected_keywords": ["meet with Karen Jin", "eOISS", "CPT Authorization Form", "employer letter", "proof of registration", "cpt", "steps", "request"]
+    },
+    {
+        "test_case": "internship_courses_timeline_for_undergraduates",
+        "input": "What is the timeline for taking internship courses for undergraduate students?",
+        "expected_keywords": ["COMP690", "applied research", "group project", "timeline", "undergraduate", "internship course"]
+    },
+    {
+        "test_case": "comp893_course_credits",
+        "input": "What are the course credits for COMP893?",
+        "expected_keywords": ["1-3 credits", "variable credit", "comp893", "credits"]
+    },
+    {
+        "test_case": "comp893_course_times",
+        "input": "What are the course times for COMP893?",
+        "expected_keywords": ["Wednesday 9:10am-12pm", "Wednesday 1:10-4pm", "comp893", "times", "schedule"]
+    },
+    {
+        "test_case": "comp893_instructor_office",
+        "input": "What is the instructor's office for COMP893?",
+        "expected_keywords": ["Rm139", "Pandora Mill building", "comp893", "office", "instructor"]
+    },
+    {
+        "test_case": "comp893_course_description",
+        "input": "What is the course description for COMP893?",
+        "expected_keywords": ["experiential learning", "team projects", "real-world", "information technology", "products", "processes", "services", "hands-on", "collaborative", "external stakeholders", "professional setting", "practical skills", "insights", "comp893"]
+    },
+    {
+        "test_case": "comp893_student_outcomes",
+        "input": "What are the student learning outcomes for COMP893?",
+        "expected_keywords": ["analyze", "design", "implement", "evaluate", "computing solutions", "IT computing requirements", "communicate", "effectively", "variety", "professional contexts", "function", "team", "IT activities", "leader", "identify", "analyze user needs", "developing", "operating", "computing systems",         "principles of computing", "comp893"]
+    },
+    {
+        "test_case": "final_report_due_comp893",
+        "input": "When is the final report due for COMP893?",
+        "expected_keywords": ["12/9", "final report", "comp893", "due date", "december 9th", "submission", "deadline"]
+    },
+    {
+        "test_case": "attendance_percentage_comp893",
+        "input": "What is the percentage for class attendance in COMP893?",
+        "expected_keywords": ["10%", "attendance", "comp893", "percentage", "grade"]
+    },
+    {
+        "test_case": "sprint_grade_calculation_comp893",
+        "input": "How is the sprint grade calculated in COMP893?",
+        "expected_keywords": ["teamwork grade", "sprint grade", "peer evaluation", "technical", "management", "rubrics", "TBA", "calculated", "weighted average", "combined", "assessment", "scoring", "comp893"]
+    },
+    {
+        "test_case": "late_submission_policy_comp893",
+        "input": "What is the policy on late submissions for COMP893?",
+        "expected_keywords": ["late submissions", "strict", "illness", "accident", "emergencies", "email", "evidence", "no credit", "penalty", "deadline", "excuse", "prior notification", "comp893"]
+    },
+    {
+        "test_case": "final_report_requirements_comp893",
+        "input": "What are the requirements for the final report for COMP893?",
+        "expected_keywords": ["title page", "executive summary", "self-assessment", "conclusions", "2 full pages", "3 full pages", "Scrum framework", "minimum", "pages", "report", "format", "full sentences", "bullet points", "comp893"]
+    },
+    {
+        "test_case": "internship_hours_requirements_comp893",
+        "input": "How many hours are required for the COMP893 internship?",
+        "expected_keywords": ["45 hours", "minimum", "credit hour", "workload estimate", "student academic work", "per credit", "per term", "minimum hours", "comp893"]
+    },
+    {
+        "test_case": "instructor_email_comp893",
+        "input": "What is the instructor's email address for COMP893?",
+        "expected_keywords": ["karen.jin@unh.edu", "email", "contact", "instructor", "comp893"]
+    },
+    {
+        "test_case": "zoom_link_comp893",
+        "input": "What is the Zoom link for COMP893?",
+        "expected_keywords": ["https://unh.zoom.us/j/4858446046", "zoom", "link", "meeting", "online", "virtual", "comp893"]
+    },
+    {
+        "test_case": "grading_breakdown_comp893",
+        "input": "What is the grading breakdown for COMP893?",
+        "expected_keywords": ["10%", "60%", "20%", "attendance", "sprint grade", "final project", "percentage", "weight", "weightage", "breakdown", "grading", "comp893"]
+    },
+    {
+        "test_case": "activities_week_3_comp893",
+        "input": "What are the activities scheduled for week 3 of COMP893?",
+        "expected_keywords": ["sprint planning", "create sprint backlog", "user stories", "integration", "tasks", "bugs", "source code control", "team communication", "jira", "week 3", "activities", "comp893"]
+    },
+    {
+        "test_case": "course_location_comp893",
+        "input": "What is the name of the building where COMP893 classes are held?",
+        "expected_keywords": ["Pandora Mill building", "Rm 139", "building", "location", "pandora mill", "comp893"]
+    },
+    {
+        "test_case": "attendance_policy_comp893",
+        "input": "What is the university's policy on attendance for COMP893?",
+        "expected_keywords": ["university policy", "attendance", "student rights", "rules", "responsibilities", "required", "excused", "email", "instructor", "comp893"]
+    },
+    {
+        "test_case": "workload_estimate_comp893",
+        "input": "What is the minimum workload estimate for COMP893?",
+        "expected_keywords": ["45 hours", "minimum", "credit per term", "workload", "estimate", "comp893"]
+    },
+    {
+        "test_case": "instructor_name_and_title_comp893",
+                "input": "What is the instructor's name and title for COMP893?",
+        "expected_keywords": ["Karen Jin", "Associate Professor", "professor", "instructor", "name", "title", "comp893"]
+    },
+    {
+        "test_case": "required_meetings_comp893",
+        "input": "Are there any required meetings for COMP893?",
+        "expected_keywords": ["required meetings", "scrum meetings", "sprint review", "sprint retrospective", "meetings", "attendance", "required", "comp893"]
+    },
+    {
+        "test_case": "final_report_format_comp893",
+        "input": "What is the format for the final report for COMP893?",
+        "expected_keywords": ["PDF", "6-8 pages", "single-spaced", "Times New Roman", "figures", "tables", "comp893", "report", "format"]
+    }
+]
+
+
+
+
