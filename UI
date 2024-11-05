@@ -1,0 +1,265 @@
+import os
+import base64
+from dotenv import load_dotenv
+from flask import Flask, render_template, request, jsonify
+from PIL import Image
+from PyPDF2 import PdfReader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_openai import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_openai import ChatOpenAI
+from langchain.memory import ConversationBufferMemory
+from langchain.chains import ConversationalRetrievalChain
+from langchain_community.callbacks import get_openai_callback
+import sqlite3
+from datetime import datetime
+import hashlib
+
+# Load environment variables
+load_dotenv()
+
+# Set up OpenAI API key
+API_KEY = "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"
+os.environ["OPENAI_API_KEY"] = API_KEY
+
+app = Flask(__name__)
+
+CUSTOM_PROMPT_TEMPLATE = """
+You are an AI assistant for UNH's computing internship courses. You provide concise, accurate answers based on the provided context and course information.
+
+Key Context Rules:
+1. For out-of-context questions:
+   Response should be: "While I'm focused on helping with UNH internship courses, I'd be happy to answer any questions you have about the program, course requirements, or internship processes."
+
+2. For unclear or ambiguous questions:
+   Ask for clarification: "Could you please clarify your question about [topic]? This will help me provide more accurate information about the internship program."
+
+3. Answer Format:
+   - Keep responses brief and focused (2-3 sentences maximum for technical concepts)
+   - Include course codes when relevant
+   - Include contact information when appropriate
+
+4. Response Topics:
+   - Course requirements and prerequisites
+   - Internship processes and deadlines
+   - CPT/OPT information
+   - Contact information for relevant offices
+   - Technical concepts used in the program
+5. Dont give any answer in more than 50 words
+
+Context: {context}
+Chat History: {chat_history}
+Question: {question}
+
+Response Guidelines:
+1. Be concise and direct
+2. Maintain a helpful and professional tone
+3. Keep answers focused on internship program
+4. Include relevant course numbers
+5. Verify all prerequisites
+6. Only provide information from official documents
+
+Remember: Always keep responses concise and directly related to the internship program.
+"""
+
+# Synonym normalization dictionary
+synonym_map = {
+    "current": "existing",
+    "existing": "existing",
+    "satisfy": "fulfill",
+    "fulfill": "fulfill",
+    "use": "utilize",
+    "utilize": "utilize"
+}
+
+# Database setup with modified schema
+def init_db():
+    conn = sqlite3.connect('chat_history.db')
+    c = conn.cursor()
+    c.execute('''CREATE TABLE IF NOT EXISTS chat_history
+                 (id INTEGER PRIMARY KEY AUTOINCREMENT,
+                  timestamp TEXT,
+                  user_message TEXT,
+                  ai_response TEXT,
+                  question_hash TEXT,
+                  original_message TEXT,
+                  is_contextual INTEGER DEFAULT 0)''')  # New column for contextual responses
+    conn.commit()
+    conn.close()
+
+def normalize_question(question):
+    """Normalize question by replacing synonyms."""
+    words = question.lower().split()
+    normalized_words = [synonym_map.get(word, word) for word in words]
+    return " ".join(normalized_words)
+
+def get_question_hash(question):
+    """Create a hash of the question for consistent lookup."""
+    normalized_question = normalize_question(question)
+    return hashlib.md5(normalized_question.encode()).hexdigest()
+
+def get_cached_response(question_hash):
+    """Retrieve cached response for a given question hash."""
+    try:
+        conn = sqlite3.connect('chat_history.db')
+        c = conn.cursor()
+        c.execute("SELECT ai_response FROM chat_history WHERE question_hash = ? AND is_contextual = 1 ORDER BY timestamp DESC LIMIT 1", 
+                (question_hash,))
+        result = c.fetchone()
+        conn.close()
+        return result[0] if result else None
+    except Exception as e:
+        print(f"Error retrieving cached response: {e}")
+        return None
+
+def insert_chat(user_message, ai_response, question_hash, original_message=None, is_contextual=0):
+    """Insert chat history with question hash and original message."""
+    try:
+        conn = sqlite3.connect('chat_history.db')
+        c = conn.cursor()
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        c.execute("INSERT INTO chat_history (timestamp, user_message, ai_response, question_hash, original_message, is_contextual) VALUES (?, ?, ?, ?, ?, ?) ",
+                  (timestamp, user_message, ai_response, question_hash, original_message, is_contextual))
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        print(f"Error inserting chat: {e}")
+
+# PDF processing functions remain the same
+def get_pdf_text(pdf_docs):
+    text = ""
+    for pdf in pdf_docs:
+        try:
+            pdf_reader = PdfReader(pdf)
+            for page in pdf_reader.pages:
+                text += page.extract_text()
+        except Exception as e:
+            print(f"Error processing PDF {pdf}: {e}")
+    return text
+
+def get_text_chunks(text):
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=1000,
+        chunk_overlap=200,
+        length_function=len
+    )
+    chunks = text_splitter.split_text(text)
+    return chunks
+
+def get_vectorstore(text_chunks):
+    embeddings = OpenAIEmbeddings()
+    vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
+    return vectorstore
+
+def get_conversation_chain(vectorstore):
+    llm = ChatOpenAI()
+    memory = ConversationBufferMemory(
+        memory_key='chat_history', return_messages=True)
+    conversation_chain = ConversationalRetrievalChain.from_llm(
+        llm=llm,
+        retriever=vectorstore.as_retriever(),
+        memory=memory
+    )
+    return conversation_chain
+
+# Global variables
+conversation = None
+messages = []  # Only current session messages
+chat_stats = {
+    'total_tokens': 0,
+    'prompt_tokens': 0,
+    'completion_tokens': 0,
+    'total_cost': 0
+}
+
+def initialize_knowledge_base():
+    global conversation
+    try:
+        # Initialize conversation
+        pdf_docs = ["2024-fall-comp690-M2-M3-jin.pdf", "2024-fall-comp893-jin.pdf", "chatbot-doc.pdf"]
+        raw_text = get_pdf_text(pdf_docs)
+        text_chunks = get_text_chunks(raw_text)
+        vectorstore = get_vectorstore(text_chunks)
+        conversation = get_conversation_chain(vectorstore)
+    except Exception as e:
+        print(f"Error initializing knowledge base: {e}")
+
+def is_query_within_context(query):
+    """Simple check to filter out irrelevant questions."""
+    keywords = ["capital", "state", "country", "geography"]
+    return not any(keyword in query.lower() for keyword in keywords)
+
+@app.route('/')
+def home():
+    return render_template('index.html', messages=[], stats=chat_stats)
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    global conversation, messages, chat_stats
+    
+    try:
+        if conversation is None:
+            initialize_knowledge_base()
+        
+        user_message = request.json.get('message', '')
+        original_message = request.json.get('original_message', '')
+        if not user_message:
+            return jsonify({'error': 'No message provided'}), 400
+            
+        # Normalize question for synonym consistency
+        normalized_message = normalize_question(user_message)
+        question_hash = get_question_hash(normalized_message)
+
+        # Check if the query is within context
+        if not is_query_within_context(normalized_message):
+            return jsonify({'response': "I'm sorry, that question seems outside the context of the provided documents."})
+
+        # Try to get cached response first
+        cached_response = get_cached_response(question_hash)
+        
+        if cached_response:
+            ai_response = cached_response
+            # Update stats with minimal values since we're using cached response
+            chat_stats = {
+                'total_tokens': chat_stats['total_tokens'],
+                'prompt_tokens': chat_stats['prompt_tokens'],
+                'completion_tokens': chat_stats['completion_tokens'],
+                'total_cost': chat_stats['total_cost']
+            }
+        else:
+            with get_openai_callback() as cb:
+                response = conversation.invoke({'question': normalized_message})
+                ai_response = response['answer']
+                
+                # Check if the response is contextual (e.g., due dates, important facts)
+                is_contextual = 1 if "due" in normalized_message.lower() else 0
+                
+                # Store new response in cache
+                insert_chat(user_message, ai_response, question_hash, original_message, is_contextual)
+                
+                # Update stats
+                chat_stats = {
+                    'total_tokens': cb.total_tokens,
+                    'prompt_tokens': cb.prompt_tokens,
+                    'completion_tokens': cb.completion_tokens,
+                    'total_cost': cb.total_cost
+                }
+        
+        # Display both original and edited messages if available
+        display_message = original_message if original_message else user_message
+        messages.append({"role": "user", "content": display_message})
+        messages.append({"role": "assistant", "content": ai_response})
+        
+        return jsonify({
+            'response': ai_response,
+            'stats': chat_stats
+        })
+        
+    except Exception as e:
+        print(f"Error in chat endpoint: {e}")
+        return jsonify({'error': 'Internal server error'}), 500
+
+if __name__ == '__main__':
+    init_db()
+    initialize_knowledge_base()  # Initialize on startup
+    app.run(debug=True)
