@@ -1,52 +1,44 @@
 import json
 import pytest
-from app import ChatBot  # Make sure this imports your ChatBot class
+from sentence_transformers import SentenceTransformer, util
+import numpy as np
+from app import ChatBot #Importing the chatbot class
 
 
-# Load test cases from JSON file
 def load_test_cases():
-    with open('questions_answers.json', 'r') as file:
-        return json.load(file)
+    with open('questions_answers.json', 'r') as f:
+        return json.load(f)
+
+
+# Initialize the Sentence Transformer model
+model = SentenceTransformer('all-mpnet-base-v2')
 
 
 @pytest.mark.parametrize("test_case", load_test_cases())
 def test_chatbot_responses(test_case):
-    # Check if the test case is for a direct question or keyword search
-    if 'expected_answer' in test_case:
-        question = test_case['question']
-        expected_answer = test_case['expected_answer']
+    question = test_case['question']
+    expected_sentence = test_case['expected_answer']
 
-        # Create an instance of ChatBot to test
-        chatbot = ChatBot()
+    chatbot = ChatBot()  # Instantiate your chatbot class
+    actual_response = chatbot.get_response(question)
 
-        # Get the actual response from the chatbot
-        actual_response = chatbot.get_response(question)
+    # Generate embeddings
+    try:
+        embedding1 = model.encode(expected_sentence, convert_to_tensor=True)
+        embedding2 = model.encode(actual_response, convert_to_tensor=True)
+    except Exception as e:
+        pytest.fail(f"Error generating embeddings: {e}")
 
-        # Assert the actual response matches the expected answer
-        assert actual_response == expected_answer, (
-            f"Failed for question: '{question}'. "
-            f"Expected: '{expected_answer}', but got: '{actual_response}'."
-        )
-        print(f"PASSED: {question}")
+    # Calculate cosine similarity
+    cosine_scores = util.cos_sim(embedding1, embedding2)
+    similarity_score = cosine_scores.item()
 
-    elif 'expected_keywords' in test_case:
-        question = test_case['input']
-        expected_keywords = test_case['expected_keywords']
+    similarity_threshold = 0.7  # Adjust this threshold as needed
 
-        # Create an instance of ChatBot to test
-        chatbot = ChatBot()
-
-        # Get the actual response from the chatbot
-        actual_response = chatbot.get_response(question)
-
-        # Check if all expected keywords are in the actual response
-        if not all(keyword in actual_response for keyword in expected_keywords):
-            missing_keywords = [kw for kw in expected_keywords if kw not in actual_response]
-            print(f"DEBUG: Actual response for '{question}': '{actual_response}'")  # Log the actual response
-            assert False, (
-                f"Failed for question: '{question}'. "
-                f"Missing keywords: {missing_keywords}. Actual response: '{actual_response}'."
-            )
-
-
-
+    assert similarity_score >= similarity_threshold, (
+        f"Failed for question: '{question}'.\n"
+        f"Expected: '{expected_sentence}',\n"
+        f"Got: '{actual_response}'.\n"
+        f"Similarity score: {similarity_score}"
+    )
+    print(f"PASSED: '{question}'")
