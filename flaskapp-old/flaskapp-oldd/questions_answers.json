@@ -1,0 +1,663 @@
+[
+  {
+    "test_case": "scrum_meeting_days",
+    "question": "What days are the scrum meetings scheduled?",
+    "expected_answer": "Scrum meetings are scheduled on Mondays and Wednesdays."
+  },
+  {
+    "test_case": "final_report_due_date",
+    "question": "When is the final report due?",
+    "expected_answer": "The final report is due on December 9th."
+  },
+  {
+    "test_case": "holiday_meetings",
+    "question": "Are there any meetings during Thanksgiving break?",
+    "expected_answer": "There are no meetings scheduled during Thanksgiving break."
+  },
+  {
+    "test_case": "grading_structure",
+    "question": "How is the final grade calculated?",
+    "expected_answer": "The final grade is composed of Class Attendance (10%), Sprint Grade (60%), and the Final Project Report (20%)."
+  },
+  {
+    "test_case": "attendance_contribution",
+    "question": "What percentage of the grade is attendance?",
+    "expected_answer": "Class attendance accounts for 10% of the final grade."
+  },
+  {
+    "test_case": "sprint_grade_calculation",
+    "question": "Explain how the Sprint Grade is determined.",
+    "expected_answer": "The Sprint Grade is a combination of Teamwork Grade and individual Sprint performance, based on rubrics."
+  },
+  {
+    "test_case": "final_project_weightage",
+    "question": "How much does the final project count toward the grade?",
+    "expected_answer": "The final project report contributes 20% to the final grade."
+  },
+  {
+    "test_case": "course_description_summary",
+    "question": "Give me a brief overview of the course.",
+    "expected_answer": "This course offers experiential learning through team projects, enhancing practical skills and providing insights into the field of computing."
+  },
+  {
+    "test_case": "instructor_contact_information",
+    "question": "How can I reach the instructor?",
+    "expected_answer": "You can contact the instructor via email at karen.jin@unh.edu or during their office hours."
+  },
+  {
+    "test_case": "minimum_internship_hours",
+    "question": "What's the minimum workload for this course?",
+    "expected_answer": "The minimum workload is 45 hours per credit per term."
+  },
+  {
+    "test_case": "course_time_clarification",
+    "question": "What time are the Wednesday classes?",
+    "expected_answer": "Wednesday classes are either from 9:10 am to 12 pm or from 1:10 pm to 4 pm."
+  },
+  {
+    "test_case": "instructor_contact_method",
+    "question": "How can I best reach the instructor?",
+    "expected_answer": "You can contact the instructor via email or during their office hours."
+  },
+  {
+    "test_case": "sprint_review_purpose",
+    "question": "What happens during sprint review?",
+    "expected_answer": "During sprint review, the team demonstrates their work, gets feedback, and plans for the next sprint."
+  },
+  {
+    "test_case": "sprint_retrospective_purpose",
+    "question": "What is the purpose of sprint retrospective?",
+    "expected_answer": "The sprint retrospective is for the team to reflect on the past sprint and identify areas for improvement."
+  },
+  {
+    "test_case": "teamwork_assessment_details",
+    "question": "How is teamwork assessed in detail?",
+    "expected_answer": "Teamwork is assessed using peer evaluation and rubrics."
+  },
+  {
+    "test_case": "individual_contribution_assessment",
+    "question": "Is individual contribution assessed?",
+    "expected_answer": "Individual contributions are considered as part of the overall team assessment."
+  },
+  {
+    "test_case": "project_backlog_creation",
+    "question": "How is the project backlog created?",
+    "expected_answer": "The project backlog is created collaboratively, defining user stories and tasks."
+  },
+  {
+    "test_case": "jira_usage",
+    "question": "How is Jira used in this course?",
+    "expected_answer": "Jira is used for project management, tracking tasks, bugs, and progress."
+  },
+  {
+    "test_case": "source_code_management",
+    "question": "How is source code managed?",
+    "expected_answer": "Source code management is done using a version control system."
+  },
+  {
+    "test_case": "communication_tools",
+    "question": "What tools are used for communication?",
+    "expected_answer": "Communication tools may include email, project management software, and instant messaging."
+  },
+  {
+    "test_case": "scrum_master_role",
+    "question": "What does the Scrum Master do?",
+    "expected_answer": "The Scrum Master facilitates meetings, removes impediments, and ensures the team adheres to Scrum principles."
+  },
+  {
+    "test_case": "product_owner_role",
+    "question": "What is the role of the Product Owner?",
+    "expected_answer": "The Product Owner defines and prioritizes features for the project."
+  },
+  {
+    "test_case": "development_team_role",
+    "question": "What does the Development Team do?",
+    "expected_answer": "The Development Team works collaboratively to develop the product increment."
+  },
+  {
+    "test_case": "sprint_goal_definition",
+    "question": "How is the sprint goal defined?",
+    "expected_answer": "The sprint goal is defined during sprint planning, based on the product backlog."
+  },
+  {
+    "test_case": "sprint_backlog_items",
+    "question": "What are the items in a sprint backlog?",
+    "expected_answer": "A sprint backlog typically includes tasks, user stories, and bugs."
+  },
+  {
+    "test_case": "daily_scrum_purpose",
+    "question": "What's the purpose of daily scrum?",
+    "expected_answer": "Daily scrum is a short meeting to discuss daily progress, identify impediments, and plan for the day."
+  },
+  {
+    "test_case": "sprint_planning_process",
+    "question": "How does sprint planning work?",
+    "expected_answer": "In sprint planning, the team collaborates to select tasks from the product backlog and create a sprint backlog for the upcoming sprint."
+  },
+  {
+    "test_case": "sprint_release_process",
+    "question": "What is the sprint release process?",
+    "expected_answer": "The sprint release involves demonstrating the completed work to stakeholders and gathering feedback."
+  },
+  {
+    "test_case": "weekly_status_report_content",
+    "question": "What should be included in the weekly report?",
+    "expected_answer": "Weekly reports should include progress updates, tasks completed, issues encountered, and any impediments."
+  },
+  {
+    "test_case": "final_report_content_details",
+    "question": "Can you elaborate on the final report's content?",
+    "expected_answer": "The final report should include an introduction, executive summary, detailed project description, self-assessment, and conclusions. It should also discuss the Scrum framework used."
+  },
+  {
+    "test_case": "report_submission_method",
+    "question": "How should the final report be submitted?",
+    "expected_answer": "The final report should be submitted as a PDF."
+  },
+  {
+    "test_case": "grading_rubric_availability",
+    "question": "Where can I find the grading rubrics?",
+    "expected_answer": "The grading rubrics will be provided by the instructor."
+  },
+  {
+    "test_case": "academic_integrity_policy",
+    "question": "What's the policy on academic integrity?",
+    "expected_answer": "Maintaining academic integrity is crucial.  Plagiarism is strictly prohibited."
+  },
+  {
+    "test_case": "missing_class_procedure",
+    "question": "What should I do if I miss a class?",
+    "expected_answer": "If you miss a class, contact the instructor as soon as possible to discuss options."
+  },
+  {
+    "test_case": "late_submission_exceptions",
+    "question": "Are there any exceptions to the late submission policy?",
+    "expected_answer": "Exceptions may be made for documented emergencies or extenuating circumstances."
+  },
+  {
+    "test_case": "homework_submission_format",
+    "question": "What format are homework assignments submitted in?",
+    "expected_answer": "Homework assignments should be submitted in the format specified by the instructor."
+  },
+  {
+    "test_case": "project_management_tools",
+    "question": "Are there specific project management tools we use?",
+    "expected_answer": "Jira is used for project management."
+  },
+  {
+    "test_case": "technical_skills_assessment",
+    "question": "How is the technical aspect of the project assessed?",
+    "expected_answer": "Technical skills are evaluated through code reviews, project functionality, and documentation."
+  },
+  {
+    "test_case": "course_objectives_summary",
+    "question": "Summarize the course objectives.",
+    "expected_answer": "This course aims to provide hands-on experience in software development using the Scrum methodology."
+  },
+  {
+    "test_case": "time_management_strategies",
+    "question": "What strategies are suggested for time management?",
+    "expected_answer": "Effective time management is emphasized through the use of Scrum principles like sprint planning and daily scrums."
+  },
+  {
+    "test_case": "problem_solving_techniques",
+    "question": "Are problem-solving techniques discussed?",
+    "expected_answer": "Problem-solving is a key element, with strategies discussed throughout the course and emphasized during team collaboration."
+  },
+  {
+    "test_case": "communication_strategies",
+    "question": "What communication strategies are emphasized?",
+    "expected_answer": "Clear and effective communication is crucial, with the use of tools like Jira and regular team meetings."
+  },
+  {
+    "test_case": "collaboration_importance",
+    "question": "Why is collaboration so important?",
+    "expected_answer": "Effective teamwork and collaboration are essential for successful project completion."
+  },
+  {
+    "test_case": "course_materials_availability",
+    "question": "Where can I find course materials?",
+    "expected_answer": "Course materials are typically available on the learning management system used by the university."
+  },
+  {
+    "test_case": "instructor_availability_outside_office_hours",
+    "question": "Can I meet with the instructor outside office hours?",
+    "expected_answer": "To meet outside of office hours, you should email the instructor to schedule an appointment."
+  },
+  {
+    "test_case": "project_selection_process",
+    "question": "How are projects selected?",
+    "expected_answer": "Projects are assigned to teams based on availability and student interests."
+  },
+  {
+    "test_case": "report_page_numbering",
+    "question": "Should the report pages be numbered?",
+    "expected_answer": "Yes, the report pages should be numbered."
+  },
+  {
+    "test_case": "report_font_size",
+    "question": "What font size should the report use?",
+    "expected_answer": "The report should use a 12-point font size."
+  },
+  {
+    "test_case": "report_spacing",
+    "question": "What spacing should the report have?",
+    "expected_answer": "The report should use single spacing."
+  },
+  {
+    "test_case": "report_submission_deadline_clarification",
+    "question": "When exactly is the report due?",
+    "expected_answer": "The final report is due on December 9th."
+  },
+  {
+    "test_case": "office_location_details",
+    "question": "Can you give me more details about the instructor's office?",
+    "expected_answer": "The instructor's office is located in Room 139 of the Pandora Mill building."
+  },
+  {
+    "test_case": "grading_criteria_details",
+    "question": "What are the specific criteria for grading?",
+    "expected_answer": "Grading is based on content (60%), grammar and mechanics (20%), and format (20%)."
+  },
+  {
+    "test_case": "scrum_roles_and_responsibilities",
+    "question": "What are the roles and responsibilities in Scrum?",
+    "expected_answer": "Scrum roles include the Scrum Master, Product Owner, and Development Team, each with specific responsibilities."
+  },
+  {
+    "test_case": "report_formatting_guidelines",
+    "question": "What formatting guidelines are there for the final report?",
+    "expected_answer": "The final report should be submitted as a PDF, using single spacing, Times New Roman 12-point font, and include numbered pages."
+  },
+  {
+    "test_case": "minimum_grade_to_pass",
+    "question": "What is the minimum grade needed to pass?",
+    "expected_answer": "A minimum grade of 75% is required to pass the course."
+  },
+  {
+    "test_case": "additional_resources_comp893",
+    "question": "Are there additional resources available for this course?",
+    "expected_answer": "Additional resources and support materials are typically available on the university's learning management system."
+  },
+  {
+    "test_case": "project_deliverables_comp893",
+    "question": "What are the deliverables for the project?",
+    "expected_answer": "The project deliverables include a fully functional software product, along with the final report and any presentations."
+  },
+  {
+    "test_case": "team_roles_comp893",
+    "question": "What are the team roles in this course?",
+    "expected_answer": "Team roles typically include a Scrum Master, Product Owner, and Development Team members."
+  },
+  {
+    "test_case": "scrum_events_comp893",
+    "question": "What are the main Scrum events in the course?",
+    "expected_answer": "Key Scrum events include sprint planning, daily scrum meetings, sprint review, and sprint retrospective meetings."
+  },
+  {
+    "test_case": "plagiarism_policy_comp893",
+    "question": "What is the policy on plagiarism?",
+    "expected_answer": "Plagiarism is strictly prohibited; any instances will result in serious consequences."
+  },
+  {
+    "test_case": "academic_honesty_comp893",
+    "question": "What are the expectations regarding academic honesty?",
+    "expected_answer": "Maintaining academic integrity is paramount; all work should be your own and properly cited."
+  },
+  {
+    "test_case": "missing_class_comp893",
+    "question": "What if I miss a class?",
+    "expected_answer": "If you miss a class, promptly contact the instructor to discuss any missed materials or assignments."
+  },
+  {
+    "test_case": "late_submission_policy_comp893_details",
+    "question": "Explain the late submission policy in detail.",
+    "expected_answer": "Late submissions will be penalized; however, exceptions may be considered for documented emergencies or extenuating circumstances."
+  },
+  {
+    "test_case": "course_communication_comp893",
+    "question": "How will course communication take place?",
+    "expected_answer": "Course communication will primarily be through email, the learning management system, and team meetings."
+  },
+  {
+    "test_case": "project_scope_comp893",
+    "question": "What is the project scope?",
+    "expected_answer": "The project scope will be clearly defined in the project description and requirements document."
+  },
+  {
+    "test_case": "technical_skills_needed_comp893",
+    "question": "What technical skills are needed for this project?",
+    "expected_answer": "The necessary technical skills will vary depending on the specific project, but proficiency in relevant programming languages and development tools will be essential."
+  },
+  {
+    "test_case": "team_dynamics_comp893",
+    "question": "How will team dynamics be managed?",
+    "expected_answer": "Team dynamics will be managed through clear communication, well-defined roles, and regular team meetings."
+  },
+  {
+    "test_case": "report_structure_comp893",
+    "question": "What is the recommended structure for the report?",
+    "expected_answer": "The report should follow a standard structure, including an introduction, body, conclusion, and appropriate sections."
+  },
+  {
+    "test_case": "additional_help_comp893",
+    "question": "Where can I get additional help?",
+    "expected_answer": "Additional help is available from the instructor during office hours, via email, or through the university's learning support services."
+  },
+  {
+    "test_case": "scrum_meeting_frequency",
+    "question": "How often are scrum meetings held?",
+    "expected_answer": "Scrum meetings are held multiple times per week, usually on Mondays, Wednesdays, and Fridays."
+  },
+  {
+    "test_case": "sprint_length",
+    "question": "How long is a sprint?",
+    "expected_answer": "The length of a sprint is not specified in this document."
+  },
+  {
+    "test_case": "project_management_software",
+    "question": "What software is used for project management?",
+    "expected_answer": "Jira is used for project management."
+  },
+  {
+    "test_case": "version_control_system",
+    "question": "What system is used for code management?",
+    "expected_answer": "The document does not specify the version control system used."
+  },
+  {
+    "test_case": "team_communication_methods",
+    "question": "How does the team communicate?",
+    "expected_answer": "Team communication is likely facilitated through various methods, including email and possibly instant messaging platforms."
+  },
+  {
+    "test_case": "meeting_attendance_policy",
+    "question": "What is the policy on meeting attendance?",
+    "expected_answer": "The provided document does not specify a formal policy on meeting attendance."
+  },
+  {
+    "test_case": "missed_meeting_procedure",
+    "question": "What should I do if I miss a meeting?",
+    "expected_answer": "If a meeting is missed, communication with the team and instructor is essential."
+  },
+  {
+    "test_case": "sprint_backlog_review",
+    "question": "When is the sprint backlog reviewed?",
+    "expected_answer": "The sprint backlog is reviewed regularly during Scrum events like sprint planning and daily scrums."
+  },
+  {
+    "test_case": "product_backlog_management",
+    "question": "How is the product backlog managed?",
+    "expected_answer": "The management of the product backlog is not detailed in this document."
+  },
+  {
+    "test_case": "user_story_creation",
+    "question": "How are user stories created?",
+    "expected_answer": "User story creation is a collaborative process, likely involving the team, stakeholders, and the Product Owner."
+  },
+  {
+    "test_case": "task_breakdown",
+    "question": "How are tasks broken down?",
+    "expected_answer": "Task breakdown is not detailed in this document; it would typically involve breaking larger tasks into smaller, more manageable ones."
+  },
+  {
+    "test_case": "bug_tracking_process",
+    "question": "How are bugs tracked and handled?",
+    "expected_answer": "Bug tracking and resolution are typically done using a system like Jira, although specifics are not provided in this document."
+  },
+  {
+    "test_case": "sprint_goal_refinement",
+    "question": "When and how are sprint goals refined?",
+    "expected_answer": "Sprint goals are reviewed and refined during sprint retrospectives and planning meetings."
+  },
+  {
+    "test_case": "weekly_log_content",
+    "question": "What information is in weekly logs?",
+    "expected_answer": "The content of weekly logs is not clearly described; they likely include progress updates and other relevant information."
+  },
+  {
+    "test_case": "final_report_submission_details",
+    "question": "How should the final report be submitted?",
+    "expected_answer": "The final report should be submitted as a PDF document by the specified deadline."
+  },
+  {
+    "test_case": "instructor_communication_preference",
+    "question": "What's the best way to contact the instructor?",
+    "expected_answer": "The best method to contact the instructor is typically via email."
+  },
+  {
+    "test_case": "course_evaluation_process",
+    "question": "How is the course evaluated?",
+    "expected_answer": "The provided document doesn't specify how the course is formally evaluated."
+  },
+  {
+    "test_case": "additional_learning_resources",
+    "question": "Are there any additional learning resources?",
+    "expected_answer": "Additional resources might be available; check the course management system."
+  },
+  {
+    "test_case": "team_roles_clarification",
+    "question": "Can you explain the team roles more clearly?",
+    "expected_answer": "Team roles would typically include a Scrum Master, Product Owner, and Development Team Members; their exact responsibilities would be defined by the team."
+  },
+  {
+    "test_case": "sprint_review_process_details",
+    "question": "Give more detail on sprint review meetings.",
+    "expected_answer": "Sprint review meetings involve a presentation of completed work, gathering stakeholder feedback, and identifying next steps."
+  },
+  {
+    "test_case": "sprint_retrospective_process_details",
+    "question": "Elaborate on the sprint retrospective process.",
+    "expected_answer": "The sprint retrospective is where the team reflects on the past sprint, identifying what worked well, what needs improvement, and actions for future sprints."
+  },
+  {
+    "test_case": "daily_scrum_format",
+    "question": "What is the typical format of a daily scrum?",
+    "expected_answer": "Daily scrums are usually short meetings where each team member provides updates on their progress and any impediments."
+  },
+  {
+    "test_case": "sprint_planning_details",
+    "question": "What happens during sprint planning?",
+    "expected_answer": "During sprint planning, the team collaborates to select items from the product backlog and create a sprint backlog, defining tasks and estimating effort."
+  },
+  {
+    "test_case": "sprint_goal_setting",
+    "question": "How are sprint goals set?",
+    "expected_answer": "Sprint goals are set collaboratively, focusing on a set of achievable objectives for the sprint."
+  },
+  {
+    "test_case": "task_estimation_techniques",
+    "question": "What techniques are used for task estimation?",
+    "expected_answer": "The document does not mention specific task estimation techniques."
+  },
+  {
+    "test_case": "risk_management_strategies",
+    "question": "Are any risk management strategies discussed?",
+    "expected_answer": "Risk management strategies are likely discussed but are not detailed in the document."
+  },
+  {
+    "test_case": "project_scope_management",
+    "question": "How is project scope managed?",
+    "expected_answer": "Project scope management is likely done through careful planning and regular communication, but details are not in the document."
+  },
+  {
+    "test_case": "change_management_process",
+    "question": "How are changes to the project handled?",
+    "expected_answer": "Changes are managed through defined processes, but specifics are not in this document."
+  },
+  {
+    "test_case": "quality_assurance_methods",
+    "question": "What quality assurance methods are used?",
+    "expected_answer": "Quality assurance is likely implemented through code reviews, testing, and other quality control procedures."
+  },
+  {
+    "test_case": "project_documentation_standards",
+    "question": "Are there any standards for project documentation?",
+    "expected_answer": "The document does not specify any particular standards for project documentation."
+  },
+  {
+    "test_case": "team_conflict_resolution",
+    "question": "How are team conflicts resolved?",
+    "expected_answer": "The method for resolving team conflicts is not explicitly mentioned in this document."
+  },
+  {
+    "test_case": "report_formatting_style",
+    "question": "What formatting style should be used for the report?",
+    "expected_answer": "The report should follow a standard formatting style, details of which would be provided separately."
+  },
+  {
+    "test_case": "report_content_organization",
+    "question": "How should the information in the report be organized?",
+    "expected_answer": "The information in the report should be logically organized into sections, with a clear introduction, body, and conclusion."
+  },
+  {
+    "test_case": "report_citation_style",
+    "question": "What citation style should be used in the report?",
+    "expected_answer": "The citation style to be used in the report is not specified in this document."
+  },
+  {
+    "test_case": "report_length_guidelines",
+    "question": "Are there specific length guidelines for the report?",
+    "expected_answer": "The document recommends a minimum of two full pages and a minimum of three full pages for the specified sections."
+  },
+  {
+    "test_case": "report_visual_aids",
+    "question": "Can I include visual aids in the report?",
+    "expected_answer": "Including appropriate visual aids (figures and tables) in the report is acceptable, provided they are properly captioned."
+  },
+  {
+    "test_case": "grading_rubric_access",
+    "question": "Where can I find the grading rubrics?",
+    "expected_answer": "The grading rubrics will be provided by the instructor."
+  },
+  {
+    "test_case": "missed_assignment_policy",
+    "question": "What's the policy if I miss an assignment?",
+    "expected_answer": "The policy on missing assignments is not explicitly stated; it is recommended to contact the instructor promptly."
+  },
+  {
+    "test_case": "extra_credit_possibility",
+    "question": "Is there any extra credit available?",
+    "expected_answer": "The possibility of extra credit is not mentioned in the document."
+  },
+    {
+        "test_case": "course_credit_hours",
+        "question": "How many credit hours is this course worth?",
+        "expected_answer": "The number of credit hours for this course is 1-3, depending on the project scope."
+    },
+
+
+
+  {
+    "test_case": "unh_manchester_location_unknown",
+    "question": "Where is UNH Manchester located?",
+    "expected_answer": "I don't know.",
+    "type": "exact"
+  },
+  {
+    "test_case": "specific_instructor_details",
+    "question": "What is Professor Jin's favorite color?",
+    "expected_answer": "I'm sorry, but I couldn't find this information in the provided document.",
+    "type": "exact"
+  },
+  {
+    "test_case": "unrelated_question",
+    "question": "What's the weather like today?",
+    "expected_answer": "I'm here to assist with UNH course scrum meeting schedule information only.",
+    "type": "exact"
+  },
+  {
+    "test_case": "future_meeting_dates",
+    "question": "What are the meeting dates for next semester?",
+    "expected_answer": "That information is not provided in the context.",
+    "type": "exact"
+  },
+  {
+    "test_case": "detailed_grading_rubric",
+    "question": "Can you provide the detailed grading rubric for each sprint?",
+    "expected_answer": "I'm sorry, but I couldn't find this information in the provided document.",
+    "type": "exact"
+  },
+  {
+    "test_case": "specific_project_details",
+    "question": "What was the exact name of the final project?",
+    "expected_answer": "I'm sorry, but I couldn't find this information in the provided document.",
+    "type": "exact"
+  },
+  {
+    "test_case": "student_personal_information",
+    "question": "What are the grades of the students in this class?",
+    "expected_answer": "I'm sorry, but I couldn't find this information in the provided document.",
+    "type": "exact"
+  },
+  {
+    "test_case": "instructor_personal_details",
+    "question": "What is the instructor's favorite programming language?",
+    "expected_answer": "I'm sorry, but I couldn't find this information in the provided document.",
+    "type": "exact"
+  },
+  {
+    "test_case": "off_topic_question",
+    "question": "What's your opinion on artificial intelligence?",
+    "expected_answer": "I'm here to assist with UNH course scrum meeting schedule information only.",
+    "type": "exact"
+  },
+  {
+    "test_case": "complex_hypothetical",
+    "question": "If the final report was late, what would be the penalty?",
+    "expected_answer": "I'm sorry, but I couldn't find this information in the provided document.",
+    "type": "exact"
+  },
+
+  {
+    "test_case": "negation_scrum_meeting_days",
+    "question": "Are there any meetings on Saturdays?",
+    "expected_answer": "No, there are no meetings scheduled on Saturdays."
+  },
+  {
+    "test_case": "negation_final_report_due_date",
+    "question": "Is the final report due next year?",
+    "expected_answer": "No, the final report is due on December 9th of this year."
+  },
+  {
+    "test_case": "negation_holiday_meetings",
+    "question": "Are meetings held on Christmas?",
+    "expected_answer": "No, there are no meetings scheduled on Christmas."
+  },
+  {
+    "test_case": "negation_grading_structure",
+    "question": "Does the final exam grade account for 50% of the final grade?",
+    "expected_answer": "No, the final grade is composed of Class Attendance (10%), Sprint Grade (60%), and the Final Project Report (20%)."
+  },
+  {
+    "test_case": "negation_instructor_contact_information",
+    "question": "Can I reach the instructor solely through postal mail?",
+    "expected_answer": "No, you can contact the instructor via email at karen.jin@unh.edu or during their office hours."
+  },
+  {
+    "test_case": "negation_course_description_summary",
+    "question": "Is this course about cooking?",
+    "expected_answer": "No, this course offers experiential learning through team projects, enhancing practical skills and providing insights into the field of computing."
+  },
+  {
+    "test_case": "negation_project_management_tools",
+    "question": "Do we use Trello for this course?",
+    "expected_answer": "No, Jira is used for project management."
+  },
+  {
+    "test_case": "negation_source_code_management",
+    "question": "Is the source code management done through email?",
+    "expected_answer": "No, source code management is done using a version control system."
+  },
+  {
+    "test_case": "negation_sprint_meeting",
+    "question": "Are sprint meetings optional?",
+    "expected_answer": "No, sprint meetings are a regular and necessary part of the Scrum process."
+  },
+  {
+    "test_case": "negation_report_formatting_guidelines",
+    "question": "Can the report be handwritten?",
+    "expected_answer": "No, the final report should be submitted as a PDF document, following the specified formatting guidelines."
+  }
+
+
+]
