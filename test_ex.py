@@ -14,6 +14,8 @@ from test_eval import test_case
 # Set the OpenAI API key as an environment variable
 
 apikey = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = "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"
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 # Predefined test cases for evaluating the chatbot
 # Each test case includes a question, expected answer, and relevant retrieval context
@@ -449,14 +451,14 @@ def run_tests():
             updated_test_cases.append(test_case)
 
     # Save evaluation results to a JSON file
-    with open("evaluation_results.json", "w") as results_file:
+    with open("deep_results.json", "w") as results_file:
         json.dump(results, results_file, indent=4)
 
     # Save updated test cases (with actual outputs) to another JSON file
     with open("updated_test_cases.json", "w") as test_cases_file:
         json.dump(updated_test_cases, test_cases_file, indent=4)
 
-    print("\nEvaluation completed. Results saved to 'evaluation_results.json'.")
+    print("\nEvaluation completed. Results saved to 'deep_results.json'.")
     print("Updated test cases saved to 'updated_test_cases.json'.")
 
 
