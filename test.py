@@ -2,12 +2,12 @@ from sqlalchemy import true, false
 
 var = [
     {
-        "question": "Who is the Faculty Internship Coordinator for UNH Manchester Computing Internship?",
+        "question": "Who is the Faculty for Internship course?",
         "answer": "Karen Jin",
         "source": "chatbot-doc.pdf"
     },
     {
-        "question": "What are the required internship courses for computing major students at UNH Manchester?",
+        "question": "What are the required internship courses for computer science major students at UNH Manchester?",
         "answer": "For undergraduate students: COMP690 Internship Experience. For graduate students: COMP890: Internship and Career Planning, COMP891: Internship Practice, COMP892: Applied Research Internship, COMP893: Team Project Internship.",
         "source": "chatbot-doc.pdf"
     },
@@ -597,10 +597,7 @@ var = [
         "is_correct": true
     }
 ]
-var = {"question": "What happens in week 1?",
-       "expected_answer": "In week 1 of COMP893, the course likely focuses on an introduction to the internship experience and course expectations, so if you're looking for precise activities like Class introduction, team setup, project management intro, scrum workflow intro, and project goal it may be best to check the syllabus directly."},
-    var = {"question": "When is the project kickoff?",
-           "expected_answer": "The project kickoff for COMP893 is scheduled for Week 2, on September 4th"},
+test_cases= [
     {"question": "When does the first sprint begin?", "expected_answer": "The first sprint for COMP893 begins on September 18th, when the development starts along with Scrum meetings"},
     {"question": "How often are scrum meetings during the first sprint?", "expected_answer": "During the first sprint of COMP893, scrum meetings are held three times a week: on Monday, Wednesday, and Friday ."},
     {"question": "When does the first sprint end?", "expected_answer": "The first sprint for COMP893 ends on October 2nd, which is also when the Sprint Review and Sprint Retrospective will take place."},
@@ -608,7 +605,7 @@ var = {"question": "What happens in week 1?",
     {"question": "When is the second sprint planning meeting?", "expected_answer": "The second sprint planning meeting for COMP893 is scheduled for October 9th during Week 7."},
     {"question": "When does the second sprint start?", "expected_answer": "The second sprint for COMP893 starts on October 9th, during Week 7"},
     {"question": "Does the scrum meeting schedule change during the second sprint?", "expected_answer": " Yes, the scrum meeting schedule does change during the second sprint. In Week 7, after the 2nd Sprint Planning meeting on 10/9, scrum meetings are held on Fridays. In Week 8, the schedule changes to meetings on Wednesday and Friday. Then in Week 9, meetings occur on Monday, Wednesday, and Friday. So, the schedule evolves throughout the sprints."},
-    {"question": "When is Thanksgiving Break?", "expected_answer": "Thanksgiving Break for COMP893 is from November 20th to November 27th"},
+    {"question": "When is fall Break?", "expected_answer": "Thanksgiving Break for COMP893 is from November 20th to November 27th"},
     {"question": "What's the focus of week 3?", "expected_answer": "Environment setup (Jira), creating the project backlog, user stories, tasks, and bugs; integration with source control, team communication, and a sprint planning meeting."},
     {"question": "When are scrum meetings held only on Mondays?", "expected_answer": "scrum meetings are held on Mondays only during Week 14 (starting on November 27) and Week 15 (starting on December 4)"},
     {"question": "What happens during week 10?", "expected_answer": "Scrum meetings (Monday, Wednesday, Friday)."},
@@ -619,8 +616,8 @@ var = {"question": "What happens in week 1?",
     {"question": "What is the project goal?", "expected_answer": "The project goal for COMP893 involves working collaboratively on a real-world internship project that allows students to apply the Scrum framework. The focus is to introduce a project by discussing its background, objectives, and the significance of using Scrum. Additionally, students will set up the project environment, create backlogs, and plan sprints, with an end goal of delivering a final report that encapsulates their experiences and outcomes."},
     {"question": "What tools are used for project management?", "expected_answer": "Jira is used for project management."},
     {"question": "What is the purpose of sprint planning?", "expected_answer": "To create a plan for the upcoming sprint based on the Product Backlog."}
-
-test_cases_page5 = [
+]
+test_cases = [
     {"question": "What should be included in my self-assessment?", "expected_answer": "Your self-assessment should address: what you learned, the project's relevance to your major, the benefits you gained, a comparison of theory (classroom learning) and practice (internship experience), how project activities correlated with classroom knowledge, how the project will influence your future career, reflections on your internship experience (including skills needing development), and advice for a fellow student or faculty member."},
     {"question": "What comparison should I make in the self-assessment?", "expected_answer": "Compare theory (classroom learning) and practice (your internship experiences)."},
     {"question": "How should I discuss the project's influence on my future career?", "expected_answer": "Explain how the project and internship experiences will affect your future career goals and plans."},
