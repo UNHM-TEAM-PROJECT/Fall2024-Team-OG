@@ -3,6 +3,13 @@
 ## Overview
 This project implements a specialized chatbot designed to assist UNH Manchester students with internship-related queries. The chatbot utilizes Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses about internship courses, requirements, and procedures.
 
+## System Architecture
+Below is the system architecture diagram showing the flow of data through our application:
+![Internship Chatbot System Architecture](images/Screenshot 2024-12-04 015918.png)
+The system consists of three main layers:
+1. **Data Processing Layer**: Handles document ingestion and preparation
+2. **Application Layer**: Manages user interactions and query processing
+3. **Data Storage Layer**: Maintains chat history
 ## Technology Stack
 - **Frontend**: Flask web interface
 - **Backend**: Python with LangChain framework
