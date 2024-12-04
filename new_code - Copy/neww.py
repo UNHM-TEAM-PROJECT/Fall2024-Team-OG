@@ -255,9 +255,9 @@ class InternshipChatbot:
             llm = ChatOpenAI(
                 model="gpt-3.5-turbo",
                 temperature=0.1, # Lower temperature for more focused responses
-                top_p=0.9,
-                presence_penalty=0.6,
-                frequency_penalty=0.5
+                top_p=0.9, # Controls diversity of word choices. 0.9 More diverse vocabulary and responses
+                presence_penalty=0.6, # Discourages repeating the same information 0.6 Strongly avoids repeating information
+                frequency_penalty=0.5 # Reduces word-for-word repetition. Forces use of different words
             )
 
             prompt = ChatPromptTemplate.from_messages([
