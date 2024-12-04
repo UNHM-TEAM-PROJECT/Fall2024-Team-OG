@@ -6,7 +6,6 @@ class TinyBERTClassifier:
         self.tokenizer = AutoTokenizer.from_pretrained("huawei-noah/TinyBERT_General_4L_312D")
         self.model = AutoModelForSequenceClassification.from_pretrained("huawei-noah/TinyBERT_General_4L_312D", num_labels=2)  # Adjust num_labels based on your classes
         self.model.eval()
-
     def classify(self, text):
         inputs = self.tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=512)
         with torch.no_grad():
