@@ -1,0 +1,452 @@
+[
+    {
+        "question": "what majors are required to take internship courses?",
+        "actual_answer": "The specific majors required to take internship courses vary by institution and program. Generally, internship courses are available to students majoring in fields that have practical components and benefit from real-world work experience, such as business, engineering, communication, marketing, computer science, and many others. It is best to check with your academic advisor or the internship coordinator at your school to find out the specific requirements for your program.",
+        "expected_answer": "Students from all computing majors are required to take internship courses. This includes undergraduate Computer Information Systems Major (CIS), Computer Science (CS) Major, and at the graduate level: M.S. Information Technology Major and M.S. Cybersecurity Engineering Major.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because all the information provided is directly relevant to the question asked.",
+        "faithfulness_reason": "Great job! There are no contradictions found in the actual output."
+    },
+    {
+        "question": "what should I do to get an internship?",
+        "actual_answer": "To get an internship, consider the following steps:\n\n1. Research: Identify companies or organizations that offer internship programs in your field of interest.\n2. Update your resume: Tailor your resume to highlight relevant skills and experiences.\n3. Network: Attend career fairs, join professional organizations, and connect with alumni for potential opportunities.\n4. Apply: Submit applications to internship openings that match your interests and qualifications.\n5. Prepare for interviews: Practice common interview questions and research the company to demonstrate your interest.\n6. Follow up: Send thank-you notes after interviews and stay in touch with your contacts.\n\nRemember to stay persistent and positive throughout the process. Good luck with your internship search!",
+        "expected_answer": "You can first start your search from UNH Handshake website. You can also apply for jobs directly through the website of the company or organization you are interested in, or through job websites such as LinkedIn, Indeed and Hired. Do attend internship fair on both Manchester and Durham campus, and speak with family, friends, and faculty. Career and Professional Success office can help you with resume writing, interview coaching and other career advice.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the response directly addresses the question in a relevant and helpful manner.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with no contradictions."
+    },
+    {
+        "question": "How can I register my internship experience on Handshake?",
+        "actual_answer": "To register your internship experience on Handshake, you can follow these steps:\n\n1. Log in to your Handshake account.\n\n2. Click on your profile icon in the top-right corner of the screen.\n\n3. Select \"Career Center\" from the drop-down menu.\n\n4. In the Career Center, click on \"Experiences\" from the menu on the left side of the page.\n\n5. Click on the blue \"Add Experience\" button.\n\n6. Choose \"Internship\" as the type of experience.\n\n7. Fill in the required information about your internship, such as the job title, company name, start and end dates, and a description of your responsibilities.\n\n8. You can also add any relevant skills, accomplishments, or projects completed during your internship.\n\n9. Once you have filled in all the necessary details, click on the \"Save\" button to add your internship experience to your Handshake profile.\n\nBy completing these steps, you will successfully register your internship experience on Handshake for potential employers to view.",
+        "expected_answer": " To register your internship experience on Handshake, please follow these steps: 1. Login to Handshake. 2. On the top right corner, under Career Center, go to Experiences. 3. Click on 'Request an Experience' and fill out the form. 4. Your internship experience must be approved by your site supervisor and your course instructor. 5. Make sure to include at least three well-developed learning objectives. If you have any questions related to registering your internship experience on Handshake, please contact the Career and Professional Success office.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.5,
+        "relevancy_reason": "The score is 1.00 because the response directly and accurately addresses the question asked.",
+        "faithfulness_reason": "The score is 0.50 because the actual output contains multiple contradictions with the retrieval context, such as directing the user to click on different buttons and select different options than what is specified in the context."
+    },
+    {
+        "question": "what are the internship course options for undergrads?",
+        "actual_answer": "There are a wide variety of internship course options for undergraduates across different fields of study. Some common internship course options include:\n\n1. Business Internship: Internships in fields such as marketing, finance, human resources, and management.\n  \n2. STEM Internship: Internships in science, technology, engineering, and math fields, including computer science, engineering, biology, and more.\n \n3. Social Science Internship: Internships in fields such as psychology, sociology, political science, and anthropology.\n \n4. Arts and Humanities Internship: Internships in fields such as literature, history, art, and languages.\n  \n5. Health Sciences Internship: Internships in fields such as nursing, public health, nutrition, and healthcare administration.\n \n6. Education Internship: Internships in schools, educational programs, and education policy organizations.\n\nThese are just a few examples of the internship course options available to undergraduates. It's important to explore internship opportunities that align with your interests and career goals. You can check with your university's career center or department advisors for more specific internship course options available to you.",
+        "expected_answer": "If you are an undergraduate student, you need to take COMP690 Internship Experience. If you are currently working, you should take the course with the applied research option. If you are in your last semester, you may take the course with the team project option.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.3333333333333333,
+        "relevancy_reason": "The score is 1.00 because the answer provided directly addresses and lists the internship course options available for undergrads with no irrelevant statements.",
+        "faithfulness_reason": "The score is 0.33 because the 'actual output' contradicts the retrieval context by providing specific internship options under different categories that are not mentioned in the context."
+    },
+    {
+        "question": "what are the internship course options for graduate students? ",
+        "actual_answer": "There are various internship course options available for graduate students, depending on their field of study and career goals. Some common internship opportunities for graduate students include:\n\n1. Research internships: These internships involve working on research projects with academic or industry partners to gain practical experience in conducting research.\n\n2. Industry internships: Graduate students can intern at companies or organizations related to their field of study to apply their knowledge in a real-world setting and gain industry experience.\n\n3. Nonprofit internships: Working with nonprofit organizations can provide graduate students with valuable experience in community engagement, advocacy, program management, and fundraising.\n\n4. Government internships: Interning with government agencies or departments can offer graduate students insight into policy-making, public administration, and civic engagement.\n\n5. International internships: Students can explore internship opportunities abroad to gain a global perspective, cross-cultural communication skills, and international work experience.\n\n6. Teaching internships: Graduate students pursuing careers in education can benefit from teaching internships at schools, colleges, or educational non-profits to develop teaching skills and classroom management techniques.\n\n7. Virtual internships: With the increasing trend of remote work, graduate students can also consider virtual internships that allow them to work remotely for organizations or companies.\n\nIt's important for graduate students to research internship opportunities early, network with professionals in their field, and seek guidance from academic advisors or career services offices to find the best internship course options that align with their career goals.",
+        "expected_answer": "If you are a graduate student, the internship course options include: - COMP890: Internship and Career Planning - COMP891: Internship Practice - COMP892: Applied Research Internship - COMP893: Team Project Internship",
+        "relevancy_score": 0.8888888888888888,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 0.89 because while most of the information provided is highly relevant to internship course options for graduate students, there was one instance of a general piece of advice that is not directly related to the question.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "Tell me more about COMP690",
+        "actual_answer": "COMP690 is a course typically offered at universities or colleges that may cover various topics related to computer science or a specific area within the field. The content and focus of COMP690 can vary depending on the institution offering it and the professor teaching it. It could cover advanced topics in computer science, research methods, project management, or other specialized areas within the field. If you have more specific information about the COMP690 course you are referring to, I can provide more details.",
+        "expected_answer": "COMP690 Internship Experience is for undergraduate students. It has an applied research option for students who are currently working, and a team project option for students in their last semester of program.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the response is perfectly relevant to the input.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "Tell me more about COMP890?",
+        "actual_answer": "COMP890 is a course offered at some universities that typically covers advanced topics in computer science or a related field. The specific content and focus of COMP890 may vary depending on the institution offering the course. It is advisable to refer to the course description provided by the university or speak with an academic advisor for more detailed information on COMP890.",
+        "expected_answer": "COMP890 Internship and Career Planning is for graduate students. You need to take this 1 cr course after the first semester to help you plan for the internship search process. It is offered in fall and spring semesters.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the response directly addresses and provides relevant information about COMP890 with no irrelevant statements.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "Tell me more about COMP891",
+        "actual_answer": "COMP891 is a graduate course that covers advanced topics in computer science. It may focus on specific areas such as machine learning, artificial intelligence, natural language processing, computer vision, or other emerging technologies. The course is designed to deepen students' understanding of complex computational concepts and their applications in various fields. It often involves hands-on projects, research assignments, and discussions to enhance practical skills and critical thinking. Additionally, COMP891 may provide opportunities for students to work on cutting-edge research projects or collaborate with industry partners.",
+        "expected_answer": "COMP891 Internship Practice is for graduate students. This is a variable credit 1-3 crs course that you will take when you have an external internship. You will need to register in this course for at least 1 credit to apply for CPT. The course is oJered in both fall and spring semesters, as well as during the summer.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the answer provided is highly relevant to the input.",
+        "faithfulness_reason": "Great job! There are no contradictions found in the actual output."
+    },
+    {
+        "question": "Tell me more about COMP892",
+        "actual_answer": "COMP892 is a course that covers various topics related to computer science and engineering. It may focus on advanced subjects such as machine learning, deep learning, artificial intelligence, data mining, or other emerging technologies. The specific content of COMP892 can vary depending on the institution offering the course and the current trends in the field. Students typically engage in hands-on projects, assignments, and research to deepen their understanding of the material. It is always a good idea to check with your academic advisor or the course instructor for the most up-to-date information on the curriculum and requirements for COMP892.",
+        "expected_answer": "COMP 892: Applied Research Internship is for graduate students. This is a variable credit 1-3 crs course for students who are currently working full time or part time in the tech fields. The course is offered in both fall and spring semesters, as well as during the summer.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with a faithfulness score of 1.00."
+    },
+    {
+        "question": "Tell me more about COMP893",
+        "actual_answer": "I'm sorry, but I couldn't find specific information about COMP893. It appears to be a course or code associated with a particular program or institution. If you provide me with more context or details, I may be able to offer more targeted assistance or information.",
+        "expected_answer": "COMP 893: Team Project Internship is for graduate students who are in their last semester of study and need to fulfill the internship requirements. You will work with other students on a collaborative project to gain practical skills and insights into the field of computing. The course is offered in fall and spring semesters.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the answer provided directly addresses the input with relevant information.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with a faithfulness score of 1.00."
+    },
+    {
+        "question": "When may I take the internship course COMP690?",
+        "actual_answer": "You may take the internship course COMP690 as per the regulations and guidelines provided by your academic institution. It is important to check with your academic advisor or the department offering the course to determine the specific requirements and prerequisites for enrolling in COMP690. Typically, internship courses are taken during specific academic terms or years of study, so make sure to plan accordingly.",
+        "expected_answer": "You may take the internship experience course COMP690 any time you have an internship. Additionally, you can take the COMP690 applied research option if you have a part-time or full-time tech job. If you can't find an internship by the last semester of your program, you are allowed to take COMP690 with the group project option.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output.",
+        "faithfulness_reason": "Great job! The 'actual output' perfectly aligns with the 'retrieval context'. Keep up the good work!"
+    },
+    {
+        "question": "When may I take COMP890",
+        "actual_answer": "COMP890 is a graduate-level course in computer science, typically offered by universities or colleges. The specific requirements and eligibility to take COMP890 may vary depending on the institution. \n\nTo determine when you may take COMP890, you should consult the academic catalog or program requirements of your school. It is recommended to fulfill any prerequisites or requirements specified by the program before enrolling in COMP890. If you have any questions or need assistance, you can also reach out to your academic advisor or the department offering the course for more information.",
+        "expected_answer": "You may take COMP890 Internship and Career Planning after you finish your first semester of study.",
+        "relevancy_score": 0.6,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 0.60 because the irrelevant statements in the actual output provide general information about COMP890 being a graduate-level course and discuss requirements and eligibility instead of directly addressing when one may take the course.",
+        "faithfulness_reason": "Great job! There are no contradictions present, resulting in a perfect faithfulness score of 1.00."
+    },
+    {
+        "question": "When may I take COMP891",
+        "actual_answer": "COMP891 is a graduate course, so you may be eligible to take it if you are enrolled in a graduate program or if you meet the prerequisites for the course. I recommend checking with your academic advisor or the department offering the course for specific guidelines on when you may take COMP891.",
+        "expected_answer": "You may take COMP891 Internship Practice when you have found an external internship. The course is offered in all semesters year around.",
+        "relevancy_score": 0.6666666666666666,
+        "faithfulness_score": 0.75,
+        "relevancy_reason": "The score is 0.67 because there is one irrelevant statement in the actual output that does not directly address the question asked in the input.",
+        "faithfulness_reason": "The score is 0.75 because the actual output incorrectly claims COMP891 is a graduate course, when the retrieval context clearly states it is a variable credit course."
+    },
+    {
+        "question": "When may I take COMP892",
+        "actual_answer": "COMP892 typically refers to a course or subject in a computer science or related field. To determine when you can take COMP892, you should consult the academic calendar or course catalog of your institution. This will usually outline the prerequisites or requirements for taking the course, such as completion of certain courses or meeting specific academic criteria. If you have any questions or need more information about COMP892, feel free to ask!",
+        "expected_answer": "You may take COMP892 Applied Research Internship if you are currently working full time or part time in the tech fields. The course is offered in all semesters year around.",
+        "relevancy_score": 0.75,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 0.75 because the response included a general explanation of what COMP892 typically refers to instead of directly addressing when the course can be taken.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with no contradictions."
+    },
+    {
+        "question": "When may I take COMP893",
+        "actual_answer": "COMP893 is a graduate-level course, so you may be eligible to take it once you have completed the necessary prerequisites for the course or have met the requirements set by your academic department. It is best to check with your academic advisor or the course instructor to see if you are qualified to enroll in COMP893.",
+        "expected_answer": "You may take COMP893 Team Project Internship in your last semester of study and need to fulfill the internship requirement. The course is offered in fall and spring semesters.",
+        "relevancy_score": 0.6666666666666666,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 0.67 because there is one irrelevant statement in the output that does not directly address when you may take COMP893.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with no contradictions."
+    },
+    {
+        "question": "What is the course name of COMP893?",
+        "actual_answer": "I'm sorry, but as an AI assistant, I do not have access to real-time information about specific course codes and names. You may need to check your university's course catalog or website to find information regarding COMP893 or consult with your academic advisor for assistance.",
+        "expected_answer": " The course name of COMP893 is 'Team Project Internship.'",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "Great job! The score is 1.00 because there are no irrelevant statements in the actual output.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "What is the course name of COMP690?",
+        "actual_answer": "I'm sorry, but without more context I'm unable to provide information about a specific course numbered COMP690. The course name may vary depending on the institution offering it. If you provide me with more details or the name of the institution, I may be able to help you better.",
+        "expected_answer": "The course name of COMP690 is 'Internship Experience'.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.6666666666666666,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output.",
+        "faithfulness_reason": "The score is 0.67 because the actual output contains a claim that contradicts the retrieval context by stating COMP 690 is named Internship Experience."
+    },
+    {
+        "question": "What room is COMP893 in?",
+        "actual_answer": "I'm sorry, but I don't have real-time information about specific rooms on campus. You may need to check your university's online schedule or contact the relevant department to find out the exact location of room COMP893.",
+        "expected_answer": "The classroom of COMP893 is in Room P142 in Fall 2024 semester",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the answer provided is directly relevant to the question asked.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with a faithfulness score of 1.00."
+    },
+    {
+        "question": "What room is COMP690 in?",
+        "actual_answer": "I'm sorry, but I do not have information specific to a room named COMP690. If you provide me with more context or details, I may be able to help you find the information you are looking for.",
+        "expected_answer": "The classroom of COMP690 is in Room P142 in Fall 2024 semester",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.5,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output, showing perfect relevancy to the input.",
+        "faithfulness_reason": "The score is 0.50 because the actual output contradicts the retrieval context by stating that COMP690 is located in Room P142, despite claiming that COMP690 is not a specific room."
+    },
+    {
+        "question": "What time is COMP893?",
+        "actual_answer": "I'm sorry, but I do not have that information. Please check with your academic advisor or refer to your course schedule for the exact timing of COMP893.",
+        "expected_answer": " COMP893 has two sections in Fall 2024: M1 Section meets on Wednesday 9:10am-12pm and M2 Section meets on Wednesday 1:10-4pm",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because all the information provided is highly relevant and directly answers the question asked.",
+        "faithfulness_reason": "Great job! The output is perfectly aligned with the retrieval context."
+    },
+    {
+        "question": "What time is COMP690?",
+        "actual_answer": "COMP690 is typically scheduled at [specific time]. I recommend checking your course schedule or contacting your professor for the exact timing.",
+        "expected_answer": " COMP690 has two sections in Fall 2024: M2 Section meets on Wednesday 9:10am-12pm and M2 Section meets on Wednesday 1:10-4pm",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.5,
+        "relevancy_reason": "The score is 1.00 because the answer provided is directly relevant and accurate to the question asked.",
+        "faithfulness_reason": "The score is 0.50 because the actual output incorrectly claims COMP690 is typically scheduled at a specific time, contradicting the two sections with different timings mentioned in the retrieval context."
+    },
+    {
+        "question": "Who is the instructor of COMP893?",
+        "actual_answer": "I'm sorry, but I don't have real-time information on specific courses or instructors. You may want to check your course schedule or contact the academic department for the most up-to-date information on the instructor of COMP893.",
+        "expected_answer": " The instructor of COMP893 Team Project Internship is Professor Karen Jin",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.5,
+        "relevancy_reason": "Great job! The score is 1.00 because there are no irrelevant statements in the actual output.",
+        "faithfulness_reason": "The score is 0.50 because there is a clear contradiction where the AI claims not to have real-time information on specific courses or instructors, but the actual output mentions Professor Karen Jin as the instructor for COMP893 and COMP690."
+    },
+    {
+        "question": "Who is the instructor of COMP690?",
+        "actual_answer": "I'm sorry, but I don't have access to real-time information about specific courses or instructors. You may want to check your course syllabus, the school's website, or contact the course department for the most up-to-date information on the instructor for COMP690.",
+        "expected_answer": "The instructor of COMP690 Internship Experience is Professor Karen Jin",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output, showing a perfect match and high relevancy.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "What is Karen Jin's role?",
+        "actual_answer": "I'm sorry, but I'm not able to provide information about specific individuals without more context. If you provide me with additional details or clarify the context of your question, I might be able to assist you better.",
+        "expected_answer": " Karen Jin teaches COMP893 and COMP690. She is also the internship coordinator for the computing programs.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.0,
+        "relevancy_reason": "The score is 1.00 because the response directly answers the question with relevant information.",
+        "faithfulness_reason": "The score is 0.00 because the actual output directly contradicts the information presented in the retrieval context."
+    },
+    {
+        "question": "How to contact Karen Jin?",
+        "actual_answer": "I'm sorry, but I can't help with contacting specific individuals. If you're trying to reach Karen Jin, you may want to try searching for her contact information online or through social media platforms.",
+        "expected_answer": "You can contact her by email Karen.Jin@unh.edu. Her office is located in Rm139, Pandora Mill building.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the answer directly addresses the question with relevant information.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with no contradictions."
+    },
+    {
+        "question": "What are the instructor's office hours?",
+        "actual_answer": "To find out the instructor's office hours, you can check the syllabus for the course or visit the instructor's webpage on the university's website. You can also contact the instructor by email or visit their office during regular business hours to inquire about their office hours.",
+        "expected_answer": " Karen Jin's office hours are Monday 1-4pm and Friday 9-noon. You can also make an appointment with her to meet in person or over zoom.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.25,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output, leading to a perfect relevancy score.",
+        "faithfulness_reason": "The score is 0.25 because the actual output contradicts the retrieval context by providing conflicting information on where to find the instructor's office hours."
+    },
+    {
+        "question": "How do you make appointments with Karen Jin?",
+        "actual_answer": "To make an appointment with Karen Jin, you can follow these steps:\n\n1. Reach out to Karen Jin via email or phone call to inquire about her availability.\n2. Provide details such as the purpose of the appointment, preferred date and time, and any other relevant information.\n3. Wait for Karen Jin to confirm her availability and schedule the appointment.\n4. Once the appointment is confirmed, make sure to mark it on your calendar and set reminders if needed.\n\nRemember to be courteous and respectful when requesting an appointment to ensure a smooth scheduling process.",
+        "expected_answer": "You should email her directly and arrange these meetings in advance. Her email is Karen.Jin@unh.edu.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.8,
+        "relevancy_reason": "The score is 1.00 because the answer is highly relevant to the input provided.",
+        "faithfulness_reason": "The score is 0.80 because the actual output lacks specific details required for appointments with Karen Jin, leading to a contradiction with the retrieval context."
+    },
+    {
+        "question": "What is the course description for COMP893?",
+        "actual_answer": "I'm sorry, but I do not have access to specific course descriptions for COMP893. Please check with your academic institution or the course instructor for the most accurate and up-to-date information on the course description. If you have any other questions or need assistance with something else, feel free to ask!",
+        "expected_answer": " The course description for COMP893 Team Project Internship is as follows: 'The internship course provides experiential learning experience through placement in team projects. This hands-on experience allows students to gain practical skills and insights into the field of computing. By working on a collaborative project with external stakeholders, they will contribute to the development of real-world information technology products, processes, or services, and understand the challenges involved in implementing technology solutions in a professional setting.'",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "Great job on achieving a perfect relevancy score of 1.00! Keep up the good work!",
+        "faithfulness_reason": "Great job! The actual output is completely faithful to the retrieval context with no contradictions."
+    },
+    {
+        "question": "What is the course description for COMP690?",
+        "actual_answer": "I'm sorry, but as an AI assistant, I do not have real-time access to specific course descriptions for COMP690. I recommend visiting the official website of the institution offering the course or contacting the academic department directly for the most accurate and up-to-date information.",
+        "expected_answer": "The course description for COMP690 Internship Experience is as follows: 'The internship course provides experiential learning experience through placement in team projects. This hands-on experience allows students to gain practical skills and insights into the field of computing. By working on a collaborative project with external stakeholders, they will contribute to the development of real-world information technology products, processes, or services, and understand the challenges involved in implementing technology solutions in a professional setting.'",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.5,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output.",
+        "faithfulness_reason": "The score is 0.50 because the internship course is mentioned to allow students to gain practical skills and insights into the field of computing, which contradicts the claim in the actual output."
+    },
+    {
+        "question": "Student learning outcome for COMP893?",
+        "actual_answer": "The student learning outcomes for COMP893 may vary depending on the specific course or program it corresponds to. However, some common learning outcomes for a course with this code may include:\n\n1. Understanding advanced topics in computer science related to a specific field or discipline.\n2. Developing advanced problem-solving skills in complex computational tasks.\n3. Enhancing expertise in programming languages, tools, and technologies.\n4. Conducting research and analysis in specialized areas of computer science.\n5. Applying theoretical knowledge to practical projects and real-world applications.\n6. Communicating technical concepts effectively through presentations, reports, and discussions.\n\nIt's recommended to consult the course syllabus or program guidelines for more specific details on the student learning outcomes for COMP893 in your context.",
+        "expected_answer": "The student learning outcomes for COMP893 Team Project Internship are as follows: 1. Analyze complex computing problems and identify solutions by applying principles of computing. 2. Design, implement, and evaluate computing solutions that meet IT computing requirements. 3. Communicate effectively in a variety of professional contexts. 4. Function effectively as a member or leader of a team engaged in IT activities. 5. Identify and analyze user needs in the process of developing and operating computing systems.",
+        "relevancy_score": 0.875,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 0.88 because the statement provides general information about student learning outcomes for COMP893, but it does not directly address the specific query about the student learning outcome for COMP893.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "Student learning outcome for COMP690?",
+        "actual_answer": "The student learning outcome for COMP690 can vary depending on the specific course content and objectives established by the instructor or institution. Generally, COMP690 courses may focus on advanced topics in computer science, information technology, or related fields. Some common learning outcomes for COMP690 courses may include:\n\n1. Demonstrate an understanding of advanced concepts, principles, and theories in a specific area of computer science or information technology.\n2. Develop and implement complex algorithms or solutions to solve challenging problems in the field.\n3. Analyze and evaluate current research or industry practices in the area of study.\n4. Communicate effectively and professionally through written reports, presentations, or other means.\n5. Collaborate with peers on group projects or research activities.\n\nIt is advisable to consult the course syllabus or contact the instructor directly for specific information regarding the student learning outcomes for COMP690 at a particular institution.",
+        "expected_answer": "The student learning outcomes for COMP690 Internship Experience are as follows: 1. Analyze complex computing problems and identify solutions by applying principles of computing. 2. Design, implement, and evaluate computing solutions that meet IT computing requirements. 3. Communicate effectively in a variety of professional contexts. 4. Function effectively as a member or leader of a team engaged in IT activities. 5. Identify and analyze user needs in the process of developing and operating computing systems.",
+        "relevancy_score": 0.8888888888888888,
+        "faithfulness_score": 0.0,
+        "relevancy_reason": "The score is 0.89 because the provided statement did not directly address the specific student learning outcome for COMP690, instead offering a general suggestion.",
+        "faithfulness_reason": "The score is 0.00 because the actual output contradicts the retrieval context multiple times by providing common learning outcomes for COMP690 courses that are not aligned with the specific outcomes mentioned in the context."
+    },
+    {
+        "question": "How much of the grade is class attendance in COMP893?",
+        "actual_answer": "In COMP893, class attendance typically contributes a certain percentage to the overall grade. The exact weight of class attendance in the final grade may vary depending on the course and the instructor. I recommend checking the course syllabus or consulting with your instructor to find out the specific percentage of the grade that is allocated to class attendance in COMP893.",
+        "expected_answer": " In Fall 2024 semester, 10% of the grade is based on class attendance",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the answer provided directly addresses and correctly answers the question asked in the input.",
+        "faithfulness_reason": "Great job! The output is perfectly aligned with the retrieval context."
+    },
+    {
+        "question": "What components does the final grade consist of in COMP893?",
+        "actual_answer": "In COMP893, the final grade typically consists of various components such as assignments, quizzes, midterm exams, final exam, class participation, and any other assessments determined by the course instructor. It's best to refer to the course syllabus or ask your instructor directly for specific details on how the final grade is calculated for COMP893.",
+        "expected_answer": " The final grade in Fall 2024 semester consists of four components: 10% Class Attendance of all required meetings. 60% Sprint Grade. 10% Homework and 20% Final Project Report",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.5,
+        "relevancy_reason": "The score is 1.00 because the response perfectly addresses and provides exactly what was asked in the input.",
+        "faithfulness_reason": "The score is 0.50 because the actual output contains information about components such as assignments, quizzes, midterm exams, final exam, class participation, and other assessments, which are not mentioned in the retrieval context."
+    },
+    {
+        "question": "How is sprint grade calculated?",
+        "actual_answer": "Sprint grades can vary depending on the sport or activity, but they are typically calculated based on the time it takes an individual to complete a specified distance. Here's a general formula for calculating sprint grade in track and field:\n\nSprint grade = Distance \u00f7 Time\n\nFor example, if a runner completes the 100-meter sprint in 10 seconds, the sprint grade would be calculated as follows:\n\nSprint grade = 100 meters \u00f7 10 seconds\nSprint grade = 10 meters per second\n\nThe higher the sprint grade, the faster the runner is considered to be. Different sports and events may use variations of this formula to calculate sprint grades based on their specific requirements.",
+        "expected_answer": " The sprint grade in Fall 2024 semester is calculated as the Teamwork Grade multiplied by the Sprint Grade. The Teamwork Grade is based on peer evaluation for each of the three sprints, and the Sprint Grade is based on the technical aspect of the product and team project management",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.0,
+        "relevancy_reason": "The score is 1.00 because the answer provided is completely relevant to the question asked.",
+        "faithfulness_reason": "The score is 0.00 because the actual output contains multiple contradictions with the retrieval context, indicating a lack of faithfulness."
+    },
+    {
+        "question": "What is the Credit Hour Workload Estimate?",
+        "actual_answer": "The Credit Hour Workload Estimate refers to the amount of time a student is expected to spend on coursework for a specific credit-bearing course. It typically includes time spent in lectures, labs, discussions, readings, assignments, studying, and other course-related activities. The standard guideline is that for each credit hour of a course, students should expect to spend about 2-3 hours per week on coursework outside of class. This estimate may vary depending on the institution and the specific course.",
+        "expected_answer": " The Credit Hour Workload Estimate for COMP893 and COMP690 is a minimum of 45 hours of student academic work per credit per term",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because there were no irrelevant statements in the actual output.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "What are the attendance policies in COMP893 and COMP690?",
+        "actual_answer": "I'm sorry, but I don't have specific information about the attendance policies for COMP893 and COMP690. I recommend reaching out to your professors or checking the course syllabi for detailed information on attendance requirements for these courses. If you need help finding this information, feel free to ask for assistance.",
+        "expected_answer": " The attendance policy for COMP893 and COMP690 states that students are responsible for attending scheduled meetings and are expected to abide by the University Policy on Attendance. If a student cannot attend a scheduled meeting, they must email the instructor about the circumstances and request to be excused BEFORE the class meeting. Additionally, students need to arrange a meeting with the instructor individually to update their internship progress",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.0,
+        "relevancy_reason": "Great job! The score is 1.00 because there are no irrelevant statements in the actual output.",
+        "faithfulness_reason": "The score is 0.00 because the actual output contradicts the attendance policies for COMP893 and COMP690 mentioned in the retrieval context."
+    },
+    {
+        "question": "What do you do if you think you'll miss a meeting?",
+        "actual_answer": "If you think you'll miss a meeting, it's important to communicate as soon as possible. Here are some steps you can take:\n\n1. Notify the organizer or relevant colleagues: Send an email or make a phone call to inform them that you won't be able to attend the meeting.\n\n2. Provide a reason: Briefly explain why you will miss the meeting. It could be due to a scheduling conflict, illness, or an unexpected situation.\n\n3. Offer to reschedule or catch up: If appropriate, suggest alternative times to reschedule the meeting or find out if there are any key points or action items you need to be aware of after the meeting.\n\n4. Apologize: Express your apologies for any inconvenience caused by your absence.\n\n5. Stay informed: Make sure to follow up later to get updates on what was discussed during the meeting and any action points assigned.\n\nRemember, clear communication and professionalism are key when you need to miss a meeting.",
+        "expected_answer": " If you anticipate missing a meeting, you should email the instructor about the circumstances and request to be excused for the meeting BEFORE the class meeting. It is important to communicate in advance and provide a valid reason for your absence",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the response directly addresses the question asked in the input with no irrelevant statements.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "What is the policy on late submissions?",
+        "actual_answer": "The policy on late submissions may vary depending on the specific context or organization. It's important to review any guidelines or rules that have been provided to you regarding late submissions. In general, organizations may have penalties or consequences for late submissions, such as reduced marks, loss of credit, or potential disqualification. It's always best to submit your work on time to avoid any negative impacts. If you have a specific situation you'd like advice on, please provide more details so I can assist you further.",
+        "expected_answer": " A late submission may be granted only if you email prior to the deadline and explains and provides evidence for the circumstances that prevent you from meeting the submission requirement",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output, the answer is perfectly relevant to the input.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "Do I still need to take the course if I am currently working?",
+        "actual_answer": "Taking a course while working can be a great way to enhance your skills, knowledge, and career prospects. However, whether you still need to take a course ultimately depends on your career goals, current job requirements, and personal interests. \n\nConsider the following factors when deciding if you still need to take a course while working:\n1. Upgrade Skills: If you want to progress in your career or switch to a different role within your current company, taking a course can help you gain the necessary skills and knowledge.\n2. Stay Competitive: Continuous learning is essential in today's fast-paced job market to stay competitive and relevant in your field.\n3. Job Requirements: If the course is a requirement for a promotion or for fulfilling specific job responsibilities, then taking the course may be necessary.\n4. Personal Growth: Taking a course can also be beneficial for personal growth and development, irrespective of immediate job requirements.\n\nUltimately, the decision to take a course while working is personal and based on your individual circumstances. Consider discussing your goals with your supervisor, career counselor, or mentor to get additional insights and support in making this decision.",
+        "expected_answer": "Yes, you do. Even if you are currently working or have worked in the past, you will still need to take the Internship Experience course as a degree requirement. However, you don't need to take another internship position if you are currently working in the field. You may use the applied research option of COMP690, or COMP892 to fulfill the internship requirements.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with no contradictions."
+    },
+    {
+        "question": "I did an internship last summer. Can I use that to cover the internship requirements?",
+        "actual_answer": "Yes, typically internships completed in the past can be used to fulfill internship requirements, especially if they are relevant to the program or position you are applying for. Make sure to check the specific requirements and guidelines of the program or job you are applying to in order to ensure that your past internship experience qualifies.",
+        "expected_answer": "No, a past internship completed cannot be used to fulfill the requirements for the course. The internship position and required hours must be completed while you are registered in the Internship Experience course.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.6666666666666666,
+        "relevancy_reason": "The score is 1.00 because the answer directly addresses and accurately answers the question asked in the input.",
+        "faithfulness_reason": "The score is 0.67 because the actual output contradicts the retrieval context by allowing a past internship to fulfill the requirements."
+    },
+    {
+        "question": "How to register for Internship Courses?",
+        "actual_answer": "To register for internship courses, you typically need to follow these steps:\n\n1. Contact your academic advisor or department head: Speak with your academic advisor or the department head of your field of study to learn about the internship course options available to you and the requirements for participating.\n\n2. Explore internship opportunities: Research and identify internship opportunities that align with your academic and career goals. You can search for internships through your university's career services office, online job boards, company websites, or by networking.\n\n3. Secure an internship position: Once you have identified a suitable internship opportunity, apply for the position by submitting your resume, cover letter, and any other required documents. Prepare for interviews and follow up with the employer as needed.\n\n4. Obtain approval for the internship course: Work with your academic advisor or internship coordinator to get approval for the internship course. This may involve filling out forms, meeting certain prerequisites, or obtaining faculty approval.\n\n5. Register for the course: After receiving approval for the internship, register for the internship course through your university's registration system. Make sure to follow any specific registration instructions provided by your academic department.\n\n6. Complete required paperwork: Some internship courses may require you to complete additional paperwork, such as learning agreements, evaluation forms, or reflective assignments. Make sure to submit all required documentation by the specified deadlines.\n\n7. Begin your internship: Once registered, begin your internship as scheduled. Keep in touch with your internship supervisor, submit any required progress reports or assignments, and actively participate in the learning experiences offered during the internship.\n\nRemember to stay in communication with your academic advisor, internship coordinator, and internship supervisor throughout the internship process to ensure a successful and rewarding experience.",
+        "expected_answer": "You need to get permission from the internship course instructor. For more details, students may contact Prof. Karen Jin, the internship coordinator.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.5714285714285714,
+        "relevancy_reason": "The score is 1.00 because the answer is perfectly relevant to the input.",
+        "faithfulness_reason": "The score is 0.57 because the actual output contains contradictions such as contacting academic advisor or department head for registration, working with academic advisor for approval, and registering through university's system after approval, all of which contradict the retrieval context instructions."
+    },
+    {
+        "question": "What requirements do you need to fulfill to earn the credit?",
+        "actual_answer": "To earn credit, you typically need to meet certain criteria set by the lender or financial institution. The specific requirements may vary depending on the type of credit being offered (such as a credit card, loan, or mortgage), but some common criteria include:\n\n1. Good credit history: Lenders will typically assess your credit score and credit report to determine your creditworthiness. A higher credit score indicates to lenders that you have a history of managing credit responsibly.\n\n2. Stable income: Lenders may require proof of stable income to ensure that you have the financial means to repay the credit.\n\n3. Low debt-to-income ratio: Lenders may consider your debt-to-income ratio, which compares your total monthly debt payments to your gross monthly income. A lower ratio indicates to lenders that you have a manageable amount of debt relative to your income.\n\n4. Employment status: Lenders may verify your employment status to assess your ability to repay the credit.\n\n5. Collateral (for secured loans): If you are applying for a secured loan, such as a mortgage or auto loan, you may need to provide collateral (such as your home or car) to secure the loan.\n\n6. Age and residency: You must be of legal age and a resident of the country where you are applying for credit.\n\n7. Other factors: Lenders may consider other factors such as your payment history, length of credit history, and any negative marks on your credit report.\n\nIt's important to carefully review the specific requirements for the type of credit you are applying for and to ensure that you meet the criteria before submitting an application.",
+        "expected_answer": "To earn credit for the internship course, you need to fulfill the following requirements: - Attend every scheduled class meeting - Submit weekly logs - Complete a final internship report - Give progress presentations during the class Additionally, you must meet the specific course syllabus requirements and complete the necessary hours at your internship based on your enrolled credit hours.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because there are no irrelevant statements in the actual output, which directly addresses the requirements needed to earn credit.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    },
+    {
+        "question": "What are the steps for registering your internship experience on handshake?",
+        "actual_answer": "To register your internship experience on Handshake, you can follow these steps:\n\n1. Log in to your Handshake account using your username and password.\n2. Go to the \"Career Center\" tab on the top navigation bar.\n3. Click on \"Experiences\" in the dropdown menu.\n4. Click on the blue \"Request an Experience\" button at the top right corner.\n5. Fill out the required information about your internship, including the job title, start and end dates, employer information, and a description of your responsibilities and achievements.\n6. Upload any relevant documents, such as a job description or evaluation form.\n7. Click \"Submit Experience\" to complete the process.\n\nOnce your internship experience is approved by your school's career center, it will be added to your Handshake profile for potential employers to view.",
+        "expected_answer": "To register your internship experience on Handshake, follow these steps: 1. Login to Handshake. 2. On the top right corner, under Career Center, go to Experiences. 3. Click on 'Request an Experience' and fill out the form. 4. Ensure that your internship experience is approved by both your site supervisor and your course instructor.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.25,
+        "relevancy_reason": "Great job! The score is at its highest because there are no irrelevant statements in the actual output.",
+        "faithfulness_reason": "The score is 0.25 because the actual output contradicts the retrieval context by not mentioning steps like clicking on 'Request an Experience', uploading relevant documents, and clicking Submit Experience."
+    },
+    {
+        "question": "Do I need to write weekly logs every week?",
+        "actual_answer": "Writing weekly logs can be a helpful way to track your progress, reflect on your goals, and stay organized. However, whether you need to write them every week ultimately depends on your preferences and goals. If you find that writing weekly logs helps you stay on track and maintain focus, then it might be a good idea to continue doing so. On the other hand, if you do not find them useful or feel overwhelmed by the idea of writing weekly logs, you might consider exploring other methods of tracking your progress and staying organized. The key is to find a system that works best for you and supports your individual needs and goals.",
+        "expected_answer": "Yes, you need to write weekly logs every week during your internship until you complete the required hours for the credit. For undergraduate students, it's 150 hours for 4 credits of COMP690. For graduate students, the credit hour is roughly equal to 40 hours of internship work based on the number of credit hours you are enrolled in. After reaching the total hours required, it's recommended to continue with the weekly logs, but you don't need to submit logs for weeks you have not worked, like during a break.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the response directly addresses the question asked with relevant information.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with no contradictions."
+    },
+    {
+        "question": "How many hours do I need to log?",
+        "actual_answer": "It depends on the specific requirements or goals you have. Can you provide more details or clarify what you're referring to?",
+        "expected_answer": "You need to log 150 hours if you are taking COMP690. For graduate students, a credit hour is equal to 40 hours of internship work. For example, if you are enrolled in 3 credit hours of the Internship Experience class, then you must complete 120 hours of internship work.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the answer directly addresses the question asked in the input with no irrelevant statements.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context with no contradictions."
+    },
+    {
+        "question": "Can I start my internship position before the Internship Experience course starts?",
+        "actual_answer": "This would depend on the specific guidelines and policies of the internship program. It's recommended to reach out to the program coordinator or supervisor to discuss your situation and see if there is any flexibility in your start date. Make sure to clarify any requirements or expectations regarding when you can begin your internship.",
+        "expected_answer": "Yes, it is permissible to start your internship position before the Internship Experience course starts. However, you can only count up to 20% of the total internship hours required towards the course if you complete the remaining hours during the same semester.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the response directly and accurately addresses the question asked in the input.",
+        "faithfulness_reason": "Great job! There are no contradictions in the actual output, resulting in a perfect faithfulness score of 1.00."
+    },
+    {
+        "question": "How many hours I can count if I start my internship work before starting the course?",
+        "actual_answer": "You can count the hours of your internship work as long as it doesn't conflict with your course schedule. It's important to balance your work and study commitments to ensure you can focus on both effectively. Check with your academic advisor or internship coordinator to confirm any specific regulations regarding timing and hours for your internship.",
+        "expected_answer": "you can only count up to 20% of the total internship hours required towards the course if you complete the remaining hours during the same semester.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 1.00 because the answer provided directly addresses and correctly answers the question asked in the input.",
+        "faithfulness_reason": "Great job! The output is perfectly faithful to the retrieval context."
+    },
+    {
+        "question": "I just got an internship offer but the semester has already started, what should I do?",
+        "actual_answer": "Congratulations on receiving the internship offer! Here are a few steps you can consider taking:\n\n1. **Communicate with your school**: Contact your academic advisor or someone in your school's administration office to discuss your situation. They may be able to offer guidance on how to balance your internship with your ongoing semester.\n\n2. **Talk to the employer**: Let the employer know about your situation and see if there is any flexibility in the start date or if they could offer a part-time option during the semester.\n\n3. **Consider your workload**: Evaluate your current course load and commitments to determine if you can realistically manage both the internship and your studies. Time management will be crucial.\n\n4. **Explore alternative options**: If you're unable to take on the internship at this time, see if there are part-time or remote opportunities that could fit better with your current schedule.\n\n5. **Seek support**: Reach out to mentors, professors, or career counselors for advice on how to navigate this situation and make the best decision for your academic and career goals.\n\nRemember that it's okay to prioritize your education, but also consider the value the internship could bring to your future career. Ultimately, make a decision that aligns with your goals and circumstances.",
+        "expected_answer": "If you receive an internship offer after the semester has already started, you should contact the faculty internship coordinator, Professor Karen Jin, and inform her of the situation. Depending on the timing of your offer, you may be allowed to late add into the internship course or arrange with the employer for a later start date.",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.2,
+        "relevancy_reason": "The score is 1.00 because the answer is perfectly relevant and addresses the user's question effectively!",
+        "faithfulness_reason": "The score is 0.20 because the actual output contains multiple contradictions by suggesting actions that are different from what is advised in the retrieval context."
+    },
+    {
+        "question": "How do I contact CaPS office.",
+        "actual_answer": "You can contact the CaPS office by phone at (555) 123-4567 or by email at caps_office@example.com. Additionally, you can visit their office in person at 123 Main Street, Suite 100.",
+        "expected_answer": "CaPS office has a website is https://manchester.unh.edu/careers/career-professional-success. You can also reach them by email unhm.career@unh.edu and by phone (603) 641-4394",
+        "relevancy_score": 1.0,
+        "faithfulness_score": 0.0,
+        "relevancy_reason": "The score is 1.00 because the response provided directly addresses and accurately answers the question asked in the input.",
+        "faithfulness_reason": "The score is 0.00 because the actual output contains multiple contradictions such as incorrect phone number, email, and physical address for the CaPS office."
+    },
+    {
+        "question": "what is the oiss' website?",
+        "actual_answer": "I'm sorry, but I am not familiar with what \"oiss\" stands for. Could you please provide more information or clarify what you are referring to so I can better assist you?",
+        "expected_answer": "The website for the Office of International Students and Scholars (OISS) is https://www.unh.edu/global/international-students-scholars. You may also email them at oiss@unh.edu",
+        "relevancy_score": 0.5,
+        "faithfulness_score": 1.0,
+        "relevancy_reason": "The score is 0.50 because while some relevant information was provided about the oiss' website, there was also an irrelevant statement that did not contribute to addressing the question.",
+        "faithfulness_reason": "Great job! The actual output perfectly aligns with the retrieval context."
+    }
+]
