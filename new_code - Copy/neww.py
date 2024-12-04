@@ -33,8 +33,9 @@ logging.basicConfig(
 )
 
 # Load environment variables
-API_KEY = "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"
+API_KEY = os.getenv("OPENAI_API_KEY")
 os.environ["OPENAI_API_KEY"] = API_KEY
+
 # Initialize Flask app
 app = Flask(__name__)
 
