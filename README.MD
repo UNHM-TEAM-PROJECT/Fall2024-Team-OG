@@ -5,7 +5,7 @@ This project implements a specialized chatbot designed to assist UNH Manchester 
 
 ## System Architecture
 Below is the system architecture diagram showing the flow of data through our application:
-![Internship Chatbot System Architecture](images/Screenshot 2024-12-04 015918.png)
+images/Screenshot 2024-12-04 015918.png
 The system consists of three main layers:
 1. **Data Processing Layer**: Handles document ingestion and preparation
 2. **Application Layer**: Manages user interactions and query processing
