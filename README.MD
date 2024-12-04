@@ -80,7 +80,7 @@ sqlite3
    python src/ragllm.py
    ```
 
-AWS EC2 Deployment Guide
+## AWS EC2 Deployment Guide
 Step 1: Launch EC2 Instance
 
 Navigate to AWS EC2 Dashboard
@@ -103,35 +103,35 @@ Step 2: Connect to EC2 Instance
 bashCopy# Set key pair permissions
 chmod 400 your-key-pair.pem
 
-# SSH into instance
+### SSH into instance
 ssh -i your-key-pair.pem ec2-user@your-ec2-public-dns
 Step 3: Setup Environment
 bashCopy# Update package manager
 sudo yum update -y
 
-# Install required packages
+### Install required packages
 sudo yum install git python3 -y
 Step 4: Deploy Application Code
 bashCopy# Clone repository
 git clone https://github.com/your-username/your-repo-name.git
 
-# Navigate to project directory
+### Navigate to project directory
 cd your-repo-name
 Step 5: Setup Dependencies
 bashCopy# Create virtual environment
 python3 -m venv venv
 
-# Activate virtual environment
+### Activate virtual environment
 source venv/bin/activate
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 Step 6: Configure Environment Variables
 Create and configure .env file:
 bashCopy# Create .env file
 touch .env
 
-# Add required environment variables
+### Add required environment variables
 echo "OPENAI_API_KEY=your_api_key_here" >> .env
 Step 7: Launch Application
 bashCopy# Start Flask application
