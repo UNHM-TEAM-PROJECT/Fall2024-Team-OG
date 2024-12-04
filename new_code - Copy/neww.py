@@ -8,31 +8,30 @@ Date: 10-30-2024
 """
 
 # Standard library imports
-import os  # For operating system operations like path handling and environment variables
-import logging  # For logging system operations and errors
-import glob  # For file pattern matching
-import re  # For regular expression operations
-import json  # For JSON data handling
-import sqlite3  # For database operations
-from datetime import datetime  # For timestamp handling
-from typing import List, Dict, Any, Optional  # For type hints
+import os  
+import logging  
+import glob 
+import re  
+import json  
+import sqlite3 
+from datetime import datetime  
+from typing import List, Dict, Any, Optional 
 
 # Third-party imports
-from dotenv import load_dotenv  # For loading environment variables from .env file
-from flask import Flask, render_template, request, jsonify  # Web framework and related utilities
-from tqdm import tqdm  # For progress bar functionality
+from dotenv import load_dotenv  
+from flask import Flask, render_template, request, jsonify 
+from tqdm import tqdm 
 
 # LangChain related imports
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI  # OpenAI specific components
-from langchain_community.vectorstores import FAISS  # For vector storage
-from langchain_community.callbacks import get_openai_callback  # For tracking OpenAI usage
-from langchain.chains import create_retrieval_chain  # For creating document retrieval chains
-from langchain.chains.combine_documents import create_stuff_documents_chain  # For combining document contents
-from langchain.prompts import ChatPromptTemplate  # For creating chat prompts
-from langchain.schema import Document  # For document schema
-from langchain_community.document_loaders import PyPDFLoader  # For loading PDF files
-from langchain.text_splitter import RecursiveCharacterTextSplitter  # For splitting text into chunks
-
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI  
+from langchain_community.vectorstores import FAISS  
+from langchain_community.callbacks import get_openai_callback  
+from langchain.chains import create_retrieval_chain  
+from langchain.chains.combine_documents import create_stuff_documents_chain 
+from langchain.prompts import ChatPromptTemplate  
+from langchain.schema import Document  
+from langchain_community.document_loaders import PyPDFLoader  
+from langchain.text_splitter import RecursiveCharacterTextSplitter  
 # Set up logging configuration
 logging.basicConfig(
     level=logging.INFO,  # Set logging level to INFO
@@ -69,11 +68,11 @@ class DocumentProcessor:
         
         # Define patterns for standardizing course codes
         course_patterns = {
-            r'COMP\s*690': 'COMP690',  # Match COMP 690, COMP690, etc.
-            r'COMP\s*890': 'COMP890',  # Match COMP 890, COMP890, etc.
-            r'COMP\s*891': 'COMP891',  # Match COMP 891, COMP891, etc.
-            r'COMP\s*892': 'COMP892',  # Match COMP 892, COMP892, etc.
-            r'COMP\s*893': 'COMP893'   # Match COMP 893, COMP893, etc.
+            r'COMP\s*690': 'COMP690',  
+            r'COMP\s*890': 'COMP890',  
+            r'COMP\s*891': 'COMP891',  
+            r'COMP\s*892': 'COMP892',  
+            r'COMP\s*893': 'COMP893'   
         }
         
         # Apply course code standardization
@@ -82,12 +81,12 @@ class DocumentProcessor:
         
         # Define patterns for standardizing common headers and formatting
         standardizations = [
-            (r'Week (\d+)[:\s]*(\d+/\d+)', r'Week \1 (\2):'),  # Standardize week headers
-            (r'(?i)office\s*hours?:', 'Office Hours:'),  # Standardize office hours header
-            (r'(?i)e-?mail:', 'Email:'),  # Standardize email header
-            (r'(?i)prerequisites?:', 'Prerequisites:'),  # Standardize prerequisites header
-            (r'(?i)requirements?:', 'Requirements:'),  # Standardize requirements header
-            (r'(?i)grading criteria:', 'Grading Criteria:')  # Standardize grading criteria header
+            (r'Week (\d+)[:\s]*(\d+/\d+)', r'Week \1 (\2):'),  
+            (r'(?i)office\s*hours?:', 'Office Hours:'),  
+            (r'(?i)e-?mail:', 'Email:'),  
+            (r'(?i)prerequisites?:', 'Prerequisites:'),  
+            (r'(?i)requirements?:', 'Requirements:'),  
+            (r'(?i)grading criteria:', 'Grading Criteria:')  
         ]
         
         # Apply standardization patterns
@@ -209,7 +208,7 @@ class ChatDatabase:
         try:
             with sqlite3.connect(self.db_name) as conn:
                 c = conn.cursor()
-                # Retrieve recent chat history, limited to specified number
+               
                 c.execute('''SELECT timestamp, user_message, ai_response 
                            FROM chat_history 
                            ORDER BY timestamp DESC 
