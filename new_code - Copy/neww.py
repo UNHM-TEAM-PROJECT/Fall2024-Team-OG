@@ -214,7 +214,7 @@ class InternshipChatbot:
             )
             
             llm = ChatOpenAI(
-                model="gpt-3.5-turbo",
+                model="gpt-4-turbo",
                 temperature=0.1,
                 top_p=0.9,
                 presence_penalty=0.6,
