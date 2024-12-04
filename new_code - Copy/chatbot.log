@@ -2951,3 +2951,82 @@ AttributeError: 'InternshipChatbot' object has no attribute 'chat_stats'
 2024-11-18 20:26:48,616 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
 2024-11-18 20:26:49,435 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-11-18 20:26:49,455 - INFO - 10.0.0.135 - - [18/Nov/2024 20:26:49] "POST /chat HTTP/1.1" 200 -
+2024-12-02 21:24:47,807 - INFO - Loading faiss with AVX2 support.
+2024-12-02 21:24:48,179 - INFO - Successfully loaded faiss with AVX2 support.
+2024-12-02 21:25:30,100 - INFO - Loading faiss with AVX2 support.
+2024-12-02 21:25:30,127 - INFO - Successfully loaded faiss with AVX2 support.
+2024-12-02 21:26:37,280 - INFO - Loading faiss with AVX2 support.
+2024-12-02 21:26:37,306 - INFO - Successfully loaded faiss with AVX2 support.
+2024-12-02 21:27:35,584 - INFO - Loading faiss with AVX2 support.
+2024-12-02 21:27:35,610 - INFO - Successfully loaded faiss with AVX2 support.
+2024-12-02 21:27:35,649 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.77:8080
+2024-12-02 21:27:35,649 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 21:31:24,153 - INFO - Loading faiss with AVX2 support.
+2024-12-02 21:31:24,177 - INFO - Successfully loaded faiss with AVX2 support.
+2024-12-02 21:31:24,213 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.77:8080
+2024-12-02 21:31:24,213 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 21:58:59,494 - INFO - Loading faiss with AVX2 support.
+2024-12-02 21:58:59,560 - INFO - Successfully loaded faiss with AVX2 support.
+2024-12-02 21:59:37,036 - INFO - Loading faiss with AVX2 support.
+2024-12-02 21:59:37,099 - INFO - Successfully loaded faiss with AVX2 support.
+2024-12-02 21:59:37,142 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.77:8080
+2024-12-02 21:59:37,142 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 23:22:47,582 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:47] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:47,590 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:47] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:47,961 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:47] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:47,967 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:47] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:47,981 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:47] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:47,987 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:47] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,002 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,008 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,024 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,030 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,046 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,052 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,071 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,077 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,094 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,100 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,117 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,123 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,139 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,146 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,162 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,169 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,187 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,193 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,211 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,220 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,237 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,245 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,262 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,269 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,286 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,292 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,310 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,318 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,334 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,341 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,360 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,367 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,384 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:48,390 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2024-12-02 23:22:57,888 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:57] "GET / HTTP/1.1" 200 -
+2024-12-02 23:22:58,502 - INFO - 127.0.0.1 - - [02/Dec/2024 23:22:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-02 23:23:05,643 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2024-12-02 23:23:05,645 - INFO - Retrying request to /embeddings in 0.396145 seconds
+2024-12-02 23:23:06,402 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2024-12-02 23:23:06,403 - INFO - Retrying request to /embeddings in 0.764318 seconds
+2024-12-02 23:23:07,515 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2024-12-02 23:23:07,518 - ERROR - Response generation error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-02 23:23:07,518 - ERROR - Chat endpoint error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-12-02 23:23:07,519 - INFO - 127.0.0.1 - - [02/Dec/2024 23:23:07] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
