@@ -1,92 +1,100 @@
 """
 
 File: chatbot.py
-Authors: Swarna
-Contributors: Amulya
+Authors: Team OG
+Contributors: Amulya, Swarnalatha, Sri Durga, Paramesh
 Date: 10-30-2024
 
 """
 
-# Import necessary libraries
-import os
-from dotenv import load_dotenv
-from flask import Flask, render_template, request, jsonify
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain_community.vectorstores import FAISS
-from langchain_community.callbacks import get_openai_callback
-from langchain.chains import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.prompts import ChatPromptTemplate
-from langchain.schema import Document  
-from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+# Standard library imports
+import os  # For operating system operations like path handling and environment variables
+import logging  # For logging system operations and errors
+import glob  # For file pattern matching
+import re  # For regular expression operations
+import json  # For JSON data handling
+import sqlite3  # For database operations
+from datetime import datetime  # For timestamp handling
+from typing import List, Dict, Any, Optional  # For type hints
 
-import sqlite3
-from datetime import datetime
-import logging
-import glob
-import re
-from tqdm import tqdm
-from typing import List, Dict, Any, Optional
-import json
+# Third-party imports
+from dotenv import load_dotenv  # For loading environment variables from .env file
+from flask import Flask, render_template, request, jsonify  # Web framework and related utilities
+from tqdm import tqdm  # For progress bar functionality
 
-#Configure logging
+# LangChain related imports
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI  # OpenAI specific components
+from langchain_community.vectorstores import FAISS  # For vector storage
+from langchain_community.callbacks import get_openai_callback  # For tracking OpenAI usage
+from langchain.chains import create_retrieval_chain  # For creating document retrieval chains
+from langchain.chains.combine_documents import create_stuff_documents_chain  # For combining document contents
+from langchain.prompts import ChatPromptTemplate  # For creating chat prompts
+from langchain.schema import Document  # For document schema
+from langchain_community.document_loaders import PyPDFLoader  # For loading PDF files
+from langchain.text_splitter import RecursiveCharacterTextSplitter  # For splitting text into chunks
+
+# Set up logging configuration
 logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
+    level=logging.INFO,  # Set logging level to INFO
+    format='%(asctime)s - %(levelname)s - %(message)s',  # Define log message format
     handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler('chatbot.log')
+        logging.StreamHandler(),  # Handler for console output
+        logging.FileHandler('chatbot.log')  # Handler for file output
     ]
 )
 
-# Load API key
+# Set up OpenAI API key (In production, use environment variables)
 API_KEY = "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"
-os.environ["OPENAI_API_KEY"] = API_KEY
+os.environ["OPENAI_API_KEY"] = API_KEY  # Set API key in environment variables
 # Initialize Flask app
-app = Flask(__name__)
+app = Flask(__name__) # Create Flask app instance
 
 class DocumentProcessor:
     def __init__(self, pdf_directory: str):
+        # Store the directory path containing PDF files
         self.pdf_directory = pdf_directory
+        
+        # Initialize text splitter with specific parameters
         self.text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000,
-            chunk_overlap=200,
-            length_function=len,
-            separators=["\n\n", "\n", ".", ";", ","]
+            chunk_size=1000,  # Maximum size of each text chunk
+            chunk_overlap=200,  # Amount of overlap between chunks
+            length_function=len,  # Function to measure text length
+            separators=["\n\n", "\n", ".", ";", ","]  # Priority order for text splitting
         )
 
+
     def clean_content(self, text: str) -> str:
-        #Clean and standardize text content
-        # Remove extra whitespace
+        # Remove excess whitespace and normalize spacing
         text = re.sub(r'\s+', ' ', text).strip()
         
-        # Clean course codes
+        # Define patterns for standardizing course codes
         course_patterns = {
-            r'COMP\s*690': 'COMP690',
-            r'COMP\s*890': 'COMP890',
-            r'COMP\s*891': 'COMP891',
-            r'COMP\s*892': 'COMP892',
-            r'COMP\s*893': 'COMP893'
+            r'COMP\s*690': 'COMP690',  # Match COMP 690, COMP690, etc.
+            r'COMP\s*890': 'COMP890',  # Match COMP 890, COMP890, etc.
+            r'COMP\s*891': 'COMP891',  # Match COMP 891, COMP891, etc.
+            r'COMP\s*892': 'COMP892',  # Match COMP 892, COMP892, etc.
+            r'COMP\s*893': 'COMP893'   # Match COMP 893, COMP893, etc.
         }
         
+        # Apply course code standardization
         for pattern, replacement in course_patterns.items():
             text = re.sub(pattern, replacement, text)
         
-        # Standardize formatting
+        # Define patterns for standardizing common headers and formatting
         standardizations = [
-            (r'Week (\d+)[:\s]*(\d+/\d+)', r'Week \1 (\2):'),
-            (r'(?i)office\s*hours?:', 'Office Hours:'),
-            (r'(?i)e-?mail:', 'Email:'),
-            (r'(?i)prerequisites?:', 'Prerequisites:'),
-            (r'(?i)requirements?:', 'Requirements:'),
-            (r'(?i)grading criteria:', 'Grading Criteria:')
+            (r'Week (\d+)[:\s]*(\d+/\d+)', r'Week \1 (\2):'),  # Standardize week headers
+            (r'(?i)office\s*hours?:', 'Office Hours:'),  # Standardize office hours header
+            (r'(?i)e-?mail:', 'Email:'),  # Standardize email header
+            (r'(?i)prerequisites?:', 'Prerequisites:'),  # Standardize prerequisites header
+            (r'(?i)requirements?:', 'Requirements:'),  # Standardize requirements header
+            (r'(?i)grading criteria:', 'Grading Criteria:')  # Standardize grading criteria header
         ]
         
+        # Apply standardization patterns
         for pattern, replacement in standardizations:
             text = re.sub(pattern, replacement, text)
             
-        return text
+    return text
 
     def process_documents(self) -> List[Document]:
         # Process PDF documents in the specified directory
@@ -94,23 +102,29 @@ class DocumentProcessor:
         if not pdf_files:
             raise Exception(f"No PDF files found in {self.pdf_directory}")
         
-        all_documents = []
+        all_documents = [] # List to store processed documents
+        
         for pdf_path in tqdm(pdf_files, desc="Processing PDFs"):
             try:
                 # Load and process each PDF
                 loader = PyPDFLoader(pdf_path)
-                pages = loader.load()
+                pages = loader.load() # Load all pages from the PDF
                 
                 for page in pages:
+                    # Clean the page content
                     cleaned_content = self.clean_content(page.page_content)
+                    # Split content into chunks
                     chunks = self.text_splitter.split_text(cleaned_content)
                     
+                    # Create document objects for each chunk
                     for chunk in chunks:
+                        # Create metadata for the chunk
                         metadata = {
-                            'source': os.path.basename(pdf_path),
-                            'page': page.metadata.get('page', 0),
-                            'type': self.determine_content_type(chunk)
+                            'source': os.path.basename(pdf_path),  # PDF filename
+                            'page': page.metadata.get('page', 0),  # Page number
+                            'type': self.determine_content_type(chunk)  # Content type
                         }
+                        # Add document to list
                         all_documents.append(Document(
                             page_content=chunk,
                             metadata=metadata
@@ -122,7 +136,7 @@ class DocumentProcessor:
                 logging.error(f"Error processing {pdf_path}: {str(e)}")
                 continue
         
-        return all_documents
+    return all_documents
 
     def determine_content_type(self, text: str) -> str:
 
@@ -147,10 +161,13 @@ class ChatDatabase:
     def init_db(self):
         # Initialize database table if it doesn't exist
         try:
+            # Create connection to SQLite database
             with sqlite3.connect(self.db_name) as conn:
                 c = conn.cursor()
+                # Check if chat_history table exists
                 c.execute(''' SELECT count(name) FROM sqlite_master WHERE type='table' AND name='chat_history' ''')
 
+                # Create table if it doesn't exist
                 if c.fetchone()[0] == 0:
                         c.execute('''CREATE TABLE chat_history
                             (id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -163,7 +180,7 @@ class ChatDatabase:
                             total_cost REAL DEFAULT 0.0,
                             response_type TEXT,
                             confidence_score REAL)''')
-                        conn.commit()
+                        conn.commit() # Commit the table creation
         except sqlite3.Error as e:
             logging.error(f"Database initialization error: {e}")
             raise
@@ -173,6 +190,7 @@ class ChatDatabase:
             with sqlite3.connect(self.db_name) as conn:
                 c = conn.cursor()
                 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                # Insert message and associated data into database
                 c.execute('''INSERT INTO chat_history 
                             (timestamp, user_message, ai_response, tokens_used, 
                              prompt_tokens, completion_tokens, total_cost)
@@ -191,11 +209,13 @@ class ChatDatabase:
         try:
             with sqlite3.connect(self.db_name) as conn:
                 c = conn.cursor()
+                # Retrieve recent chat history, limited to specified number
                 c.execute('''SELECT timestamp, user_message, ai_response 
                            FROM chat_history 
                            ORDER BY timestamp DESC 
                            LIMIT ?''', (limit,))
                 rows = c.fetchall()
+                # Format results as list of dictionaries
                 return [
                     {
                         'timestamp': row[0],
@@ -218,13 +238,15 @@ class InternshipChatbot:
             'completion_tokens': 0,
             'total_cost': 0
         }
-        self.embeddings_path = embeddings_path
-        self.initialize_chain()
+        self.embeddings_path = embeddings_path # Path to stored embeddings
+        self.initialize_chain() # Set up the language model chain
 
     def initialize_chain(self):
         # Initialize the language model chain
         try:
+            # Initialize OpenAI embeddings
             embeddings = OpenAIEmbeddings()
+            # Load vector store from disk
             vectorstore = FAISS.load_local(
                 self.embeddings_path,
                 embeddings,
@@ -233,7 +255,7 @@ class InternshipChatbot:
             
             llm = ChatOpenAI(
                 model="gpt-3.5-turbo",
-                temperature=0.1,
+                temperature=0.1, # Lower temperature for more focused responses
                 top_p=0.9,
                 presence_penalty=0.6,
                 frequency_penalty=0.5
@@ -285,10 +307,10 @@ class InternshipChatbot:
                 llm=llm,
                 prompt=prompt
             )
-
+            # Create retrieval chain with vector store
             self.chain = create_retrieval_chain(
                 vectorstore.as_retriever(
-                    search_kwargs={"k": 8}
+                    search_kwargs={"k": 8}   # Retrieve top 8 relevant documents
                 ),
                 document_chain
             )
@@ -303,11 +325,12 @@ class InternshipChatbot:
             with get_openai_callback() as cb:
                 response = self.chain.invoke({
                     "input": user_message,
-                    "chat_history": self.format_chat_history()
+                    "chat_history": self.format_chat_history() # Include recent chat history
                 })
                 
+                # Extract AI response from chain output
                 ai_response = response.get('answer', '')
-                
+                 # Update chat history
                 self.chat_history.append({
                     "human": user_message,
                     "ai": ai_response
@@ -350,16 +373,18 @@ def home():
 def chat():
     # Handle chat requests
     try:
+        # Get JSON data from request
         data = request.get_json()
+        # Validate request data
         if not data or 'message' not in data:
             return jsonify({'error': 'No message provided'}), 400
-
+         # Clean user message
         user_message = data['message'].strip()
         if not user_message:
             return jsonify({'error': 'Empty message'}), 400
-
+        # Get response from chatbot
         response_data = chatbot.get_response(user_message)
-        
+         # Store conversation in database
         db.store_message(
             user_message=user_message,
             ai_response=response_data['response'],
