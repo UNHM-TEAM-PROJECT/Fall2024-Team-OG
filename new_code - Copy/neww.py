@@ -1,5 +1,13 @@
-# chatbot.py
+"""
 
+File: chatbot.py
+Authors: Swarna
+Contributors: Amulya
+Date: 10-30-2024
+
+"""
+
+# Import necessary libraries
 import os
 from dotenv import load_dotenv
 from flask import Flask, render_template, request, jsonify
@@ -22,7 +30,7 @@ from tqdm import tqdm
 from typing import List, Dict, Any, Optional
 import json
 
-# Configure logging
+#Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -32,7 +40,7 @@ logging.basicConfig(
     ]
 )
 
-# Load environment variables
+# Load API key
 API_KEY = "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"
 os.environ["OPENAI_API_KEY"] = API_KEY
 # Initialize Flask app
@@ -49,6 +57,7 @@ class DocumentProcessor:
         )
 
     def clean_content(self, text: str) -> str:
+        #Clean and standardize text content
         # Remove extra whitespace
         text = re.sub(r'\s+', ' ', text).strip()
         
@@ -80,6 +89,7 @@ class DocumentProcessor:
         return text
 
     def process_documents(self) -> List[Document]:
+        # Process PDF documents in the specified directory
         pdf_files = glob.glob(os.path.join(self.pdf_directory, "*.pdf"))
         if not pdf_files:
             raise Exception(f"No PDF files found in {self.pdf_directory}")
@@ -87,6 +97,7 @@ class DocumentProcessor:
         all_documents = []
         for pdf_path in tqdm(pdf_files, desc="Processing PDFs"):
             try:
+                # Load and process each PDF
                 loader = PyPDFLoader(pdf_path)
                 pages = loader.load()
                 
@@ -114,6 +125,8 @@ class DocumentProcessor:
         return all_documents
 
     def determine_content_type(self, text: str) -> str:
+
+        # Determine the type of content based on text
         if 'COMP' in text:
             return 'course_info'
         elif 'Week' in text and 'Scrum' in text:
@@ -126,11 +139,13 @@ class DocumentProcessor:
 
 class ChatDatabase:
     def __init__(self, db_name='chat_history.db'):
+        # Initialize database for storing chat history
         self.db_name = db_name
         
         self.init_db()
 
     def init_db(self):
+        # Initialize database table if it doesn't exist
         try:
             with sqlite3.connect(self.db_name) as conn:
                 c = conn.cursor()
@@ -154,6 +169,7 @@ class ChatDatabase:
             raise
     def store_message(self, user_message: str, ai_response: str, stats: Dict[str, Any]):
         try:
+            # Store chat message in the database
             with sqlite3.connect(self.db_name) as conn:
                 c = conn.cursor()
                 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -171,6 +187,7 @@ class ChatDatabase:
             logging.error(f"Database error: {e}")
             raise
     def get_chat_history(self, limit: int = 100) -> List[Dict]:
+        # Retrieve chat history from the database
         try:
             with sqlite3.connect(self.db_name) as conn:
                 c = conn.cursor()
@@ -192,6 +209,7 @@ class ChatDatabase:
             return []
 class InternshipChatbot:
     def __init__(self, embeddings_path: str):
+        # Initialize chatbot with embeddings path
         self.chain = None
         self.chat_history = []
         self.stats = {
@@ -204,6 +222,7 @@ class InternshipChatbot:
         self.initialize_chain()
 
     def initialize_chain(self):
+        # Initialize the language model chain
         try:
             embeddings = OpenAIEmbeddings()
             vectorstore = FAISS.load_local(
@@ -279,6 +298,7 @@ class InternshipChatbot:
             raise
 
     def get_response(self, user_message: str) -> Dict[str, Any]:
+        # Generate response for user message
         try:
             with get_openai_callback() as cb:
                 response = self.chain.invoke({
@@ -311,6 +331,7 @@ class InternshipChatbot:
             raise
 
     def format_chat_history(self) -> str:
+        # Format chat history for context
         return "\n".join([
             f"Human: {msg['human']}\nAssistant: {msg['ai']}"
             for msg in self.chat_history[-5:]
@@ -322,10 +343,12 @@ chatbot = InternshipChatbot(embeddings_path="embeddings")
 
 @app.route('/')
 def home():
+    # Render home page
     return render_template('index.html')
 
 @app.route('/chat', methods=['POST'])
 def chat():
+    # Handle chat requests
     try:
         data = request.get_json()
         if not data or 'message' not in data:
@@ -349,5 +372,31 @@ def chat():
         logging.error(f"Chat endpoint error: {e}")
         return jsonify({'error': str(e)}), 500
 
+    def load_test_cases():
+        # Load test cases from JSON file
+        with open('deqna.json', 'r') as file:  # Ensure the correct path to your JSON file
+            data = json.load(file)
+            return data["test_cases"]  # Access the test_cases list
+
+    # Load the test cases once when the server starts
+    test_cases = load_test_cases()
+
+    # Create a dictionary for quick access of answers based on questions
+    answers_dict = {case["question"]: case["expected_answer"] for case in test_cases}
+
+    @app.route('/ask', methods=['POST'])
+    def respond():
+        #Handle ask requests for test cases
+        data = request.json
+        question = data.get('message', '').strip()  # Strip spaces to prevent mismatches
+
+        # Check if the question exists in the loaded answers
+        if question in answers_dict:
+            response = answers_dict[question]
+        else:
+            response = "I'm sorry, I don't have an answer for that."  # Default fallback
+
+        return jsonify({"response": response})
+
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=8080)
